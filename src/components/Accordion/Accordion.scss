@@ -1,0 +1,91 @@
+.accordion {
+    position: relative;
+    margin: 50px 0;
+       &::after {
+       content: ' ';
+       position: absolute;
+       bottom: -20px;
+       left: 45%;
+       border-bottom: 1px solid #3b3b3b;
+       width: 10%;
+    }
+}
+
+.accordion-list {
+    &__item {
+        display: block;
+        &_text {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            color: #3b3b3b;
+        }
+    }
+}
+
+.accordionDropdown {
+    &__body {
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    text-align: center;
+    padding: 20px;
+    }
+}
+
+.accordionDropdown-list {
+    list-style: none;
+    &__item-docs {
+        &_link {
+            text-decoration: none;
+        }
+        &_text {
+            display: inline-block;
+            color: #3b3b3b;
+            font-size: 17px;
+            transition: all 0.1s ease-in;
+            padding: 5px 0;
+            line-height: 15px;
+        }
+    }
+    &__item-p {
+        padding: 5px;
+        &_text {
+            color: #3b3b3b;
+            font-size: 17px;
+            line-height: 30px;
+        }
+    }
+}
+
+.accordioDropdown-paragraf {
+    &__item {
+        font-size: 17px;
+        color: #3b3b3b;
+        line-height: 30px;
+    }
+}
+
+.pushed {
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    font-size: 30px;
+    transition: all 0.1s ease-in;
+   }
+
+.default {
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    font-size: 30px;
+    transition: all 0.1s ease-in;
+    background: #f6f6f6;
+    &:hover {
+        background: #d9d9d9;
+    } 
+}
+

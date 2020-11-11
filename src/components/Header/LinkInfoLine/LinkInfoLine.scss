@@ -1,0 +1,38 @@
+.link-info-line-body {
+  background: #d9d9d9;
+}
+
+.link-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.info-line-body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 10px;
+}
+
+.info-location {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  cursor: pointer;
+  &__link {
+    padding-left: 5px;
+    color: #3b3b3b;
+  }
+}
+
+.info-mail {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__link {
+    padding-left: 5px;
+    color: #3b3b3b;
+  }
+}

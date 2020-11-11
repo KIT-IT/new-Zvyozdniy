@@ -1,0 +1,60 @@
+.personal {
+    padding: 0 0 40px 0;
+    position: relative;
+     &::after {
+       content: ' ';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       border-bottom: 1px solid black;
+       width: 100%;
+    }
+    &__body {
+       height: 100%;
+    }
+    &__list {
+       display: flex;
+       justify-content: space-around;
+       align-self: center;
+       flex-wrap: wrap;
+       list-style: none;
+       padding: -10px;
+    }
+ }
+ 
+ .title {
+    text-align: center;
+    margin: 40px 0;
+ }
+ 
+ 
+ .personal-item {
+    width: 300px;
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 50px;
+    transition: all 0.2s ease-out;
+    &__photo {
+       display: block;
+       height: 100px;
+       width: 100px;
+       margin: 0 auto;
+       border-radius: 50%;
+    }
+    &__discription {
+       margin-top: 20px;
+       &_name {
+          text-align: center;
+          font-size: 17px;
+          font-weight: bold;
+       }
+       &_position {
+          text-align: center;
+          font-size: 15px;
+          padding-top: 5px;
+       }
+    }
+    &:hover {
+       box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2) ;
+    }
+ }

@@ -1,0 +1,53 @@
+.visImpaired-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.visBlock {
+    display: flex;
+    align-items: center;
+}
+
+.visBlock button {
+    margin-left: 20px;
+    border: 1px solid black;
+    padding: 0 5px;
+    border-radius: 8px;
+    background: none;
+}
+
+.background-block__icons {
+    display: flex;
+    align-items: center;
+    &_icon {
+        margin-left: 10px;
+        padding: 3px 4px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 50%;
+        &:nth-child(2) {
+            background-color: black;
+        }
+        &:nth-child(3) {
+            border-color: #063462;
+            background-color: #9DD1FF;
+        }
+        &:nth-child(4) {
+            border-color: #A9E44D;
+            background-color: #3B2716;
+        }
+    }
+    
+}
+
+.fontSize-block__icons {
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    &_icon {
+        padding-left: 10px;
+        cursor: pointer;
+    }
+}

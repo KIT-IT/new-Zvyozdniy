@@ -1,0 +1,52 @@
+.info-history {
+    position: relative;
+    &::after {
+       content: ' ';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       border-bottom: 1px solid black;
+       width: 100%;
+    }
+     
+ }
+ .info-history-tabs {
+    height: 25px;
+    margin: 0 auto;
+    background: darkgoldenrod;
+ }
+ 
+ .tabs-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    &__item {
+       color: white;
+       padding:5px;
+       transition: all 0.2s ease-in;
+       font-weight: 400;
+       &:hover {
+          color: black;
+       }
+    }
+ }
+ 
+ .info-history-main {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+    &__text {
+       text-align: center;
+    }
+    &__img-block {
+       margin-left: 50px;
+    }
+    &__img{
+       height: 300px;
+       width: 500px;
+    }
+ }

@@ -1,0 +1,67 @@
+.clubsList {
+    &__body {}
+    &__list {}
+}
+
+.clubsListItem {
+    margin: 40px;
+    &__body {
+        font-size: 17px;
+        line-height: 1.3;
+        color: #3b3b3b;
+        position: relative;
+        &::after {
+            content: ' ';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            border-bottom: 1px solid black;
+            width: 100%;
+         }
+    }
+}
+
+.clubItem-main {
+    &__club {
+        &_text {}
+    }
+    &__group {
+        &_text {}
+    }
+    &__age {
+        &_text {}
+    }
+    &__info {
+        margin-top: 30px;
+        text-align: center;
+        &_text {
+            
+        }
+    }
+}
+
+.clubItem-info {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    &__manage {
+        
+        &_name {
+            
+        }
+    }
+    &__photo {
+        margin-top: 10px;
+        &_photo {
+            width: 100px;
+        }
+    }
+    &__shedule {
+        margin-top: 10px;
+        &_text {}
+    }
+    &__code {
+        margin-top: 10px;
+        &_code {}
+    }
+}
