@@ -42,12 +42,16 @@ function Slider() {
                                </div>
                            )
                         })}
-                        <button onClick={handleSliderLeft} className="btn" id="left">
-                            <FontAwesomeIcon className="btn__icon" icon={faAngleLeft} size={'2x'} color={'white'}/>
-                        </button>
-                        <button onClick={handleSliderRight} className="btn" id="right">
-                            <FontAwesomeIcon className="btn__icon" icon={faAngleRight} size={'2x'} color={'white'}/>
-                        </button>
+                        <div onClick={handleSliderLeft} className="btn" id="left">
+                            <div className="btn__icon-left">
+                                <FontAwesomeIcon className="btn__icon-left_ico" icon={faAngleLeft} size={'2x'} color={'white'}/>
+                            </div>    
+                        </div>
+                        <div onClick={handleSliderRight} className="btn" id="right">
+                            <div className="btn__icon-right">
+                                <FontAwesomeIcon className="btn__icon-right_ico" icon={faAngleRight} size={'2x'} color={'white'}/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

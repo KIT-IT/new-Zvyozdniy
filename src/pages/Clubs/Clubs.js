@@ -17,7 +17,7 @@ function Clubs() {
     })
 
     return (
-        <div className="clubs">
+        <div className="clubs wrapper">
             <div className="clubs__body _container">
                 <ul className="genre-list">
                     {list}

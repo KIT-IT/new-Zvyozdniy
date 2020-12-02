@@ -1,5 +1,6 @@
+@import '../../../scss/style.scss';
+
 .personal {
-    padding: 0 0 40px 0;
     position: relative;
      &::after {
        content: ' ';
@@ -18,14 +19,10 @@
        align-self: center;
        flex-wrap: wrap;
        list-style: none;
-       padding: -10px;
     }
  }
  
- .title {
-    text-align: center;
-    margin: 40px 0;
- }
+ .title {}
  
  
  .personal-item {
@@ -34,6 +31,12 @@
     margin: 10px;
     padding: 50px;
     transition: all 0.2s ease-out;
+    @media (max-width: $md1+px) {
+      padding: 40px;
+    }
+    @media (max-width: $md3+px) {
+      padding: 30px;
+    }
     &__photo {
        display: block;
        height: 100px;
@@ -45,12 +48,12 @@
        margin-top: 20px;
        &_name {
           text-align: center;
-          font-size: 17px;
+          //font-size: 17px;
           font-weight: bold;
        }
        &_position {
           text-align: center;
-          font-size: 15px;
+          //font-size: 15px;
           padding-top: 5px;
        }
     }

@@ -1,8 +1,7 @@
 import React from 'react'
 import './Footer.scss'
 import LinkLine from "../Header/LinkLine/LinkLine"
-import logo from '../../assets/images/linkIcons/logo.png'
-import { footerLinksConfig } from '../../configurations/footerLinksConfig'
+import logo from '../../assets/images/logo.png'
 import {Link} from 'react-router-dom'
 
 
@@ -12,21 +11,34 @@ function Footer() {
         <div className="footer">
             <div className="footer-body _container">
                 <div className="footer-nav">
-                    <ul className="footer-nav__list">
-                        { footerLinksConfig.map(i => {
-                            return (
-                            <li className="footer-nav__list_item" key={i.id}>
-                                <Link className="footer-nav__list_item-link" to={i.to}>{i.name}</Link>
-                            </li>
-                            )
-                        })}
-                    </ul>
+                    <div className="footer-nav__list first">
+                        <div className="footer-nav__item">
+                            <Link className="footer-nav__item_link" to="/contacts">Контакты</Link>
+                        </div>
+                        <div className="footer-nav__item">
+                            <Link className="footer-nav__item_link" to="/">Независимая Оценка</Link>
+                        </div>
+                        <div className="footer-nav__item">
+                            <Link className="footer-nav__item_link" to="/documents">Правовая Информация</Link>
+                        </div>
+                    </div>
+                    <div className="footer-nav__list second">
+                        <div className="footer-nav__item">
+                            <Link className="footer-nav__item_link" to="/">Услуги</Link>
+                        </div>
+                        <div className="footer-nav__item">
+                            <Link className="footer-nav__item_link" to="/vacancies">Вакансии</Link>
+                        </div>
+                        <div className="footer-nav__item">
+                            <Link className="footer-nav__item_link" to="/questions">Ответы на часто задаваемые вопросы</Link>
+                        </div>
+                    </div>
                 </div>
                 <div className="footer-logo">
                     <img className="footer-logo__img" src={logo} alt="logo-zvz"/>
                 </div>
                 <div className="footer-link">
-                    <LinkLine />
+                    <LinkLine cls={"footer-icon"}/>
                 </div>
             </div>
         </div>

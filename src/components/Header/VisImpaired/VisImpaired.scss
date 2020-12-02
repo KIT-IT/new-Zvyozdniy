@@ -1,21 +1,52 @@
+@import '../../../scss/style.scss';
+
+.visImpaired {
+    background: white;
+    color: #3b3b3b;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: normal;
+}
+
 .visImpaired-body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
+    min-height: 40px;
+    padding: 5px 0;
+    @media (max-width: $md3+px) {}
 }
 
 .visBlock {
     display: flex;
     align-items: center;
+    padding: 5px 0;
+    width: 50%;
+    @media (max-width: $md3+px) {
+        width: 100%;
+    }
 }
 
 .visBlock button {
-    margin-left: 20px;
+    margin-left: 5px;
+    width: 90px;
     border: 1px solid black;
     padding: 0 5px;
     border-radius: 8px;
     background: none;
+    @media (max-width: $md2+px) {
+        margin-left: 5px;
+    }
+}
+
+.view-block {
+    &__text {}
+}
+
+.img-block {
+    &__text {}
+    &__button {}
 }
 
 .background-block__icons {
@@ -27,6 +58,14 @@
         cursor: pointer;
         border: 1px solid black;
         border-radius: 50%;
+        @media (max-width: $md2+px) {
+            margin-left: 5px;
+            padding: 2px 3px;
+         }
+         &:nth-child(1) {
+            background-color: white;
+            color: black;
+        }
         &:nth-child(2) {
             background-color: black;
         }
@@ -47,7 +86,34 @@
     align-items: center;
     padding-left: 3px;
     &_icon {
-        padding-left: 10px;
+        margin-left: 10px;
         cursor: pointer;
+        @media (max-width: $md2+px) {
+            margin-left: 5px;
+         }
+    }
+}
+
+.letterSpaicing-block {
+    &__text {}
+}
+
+.letterSpaicing-block-buttons {
+    display: flex;
+    &__body {
+        
+        &_button {}
+    }
+}
+
+.lineHeight-block {
+    &__text {}
+}
+
+.lineHeight-block-buttons {
+    display: flex;
+    &__body {
+        
+        &_button {}
     }
 }

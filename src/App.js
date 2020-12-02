@@ -16,10 +16,11 @@ import Events from './pages/Events/Events';
 import Clubs from './pages/Clubs/Clubs';
 import ClubsList from './pages/Clubs/ClubsList/ClubsList';
 import {clubsCircList, clubsYoungersList, clubsArtList, clubsVocalList, clubsDanceList, clubsTheatreList, clubsOldersList} from './configurations/clubsListConfig'
+import Festivals from './pages/Festivals/Festivals';
 
 
 function App() {
-  return (
+    return (
     <Router>
         <Header/>
         <Switch>
@@ -30,6 +31,8 @@ function App() {
             <Route path="/questions" component={Questions} />
             <Route path="/contacts" component={Contacts} />
             <Route path="/libraries" component={Libraries} />
+            <Route path="/festivals" component={Festivals} />
+
 
             <Route path="/libreries/pahraLib">
               <LibreriesItem 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ClubsListItem({key, club, group, age, info, manage, managePhoto, shedule, code}) {
+function ClubsListItem({ club, group, age, info, manage, managePhoto, shedule, code}) {
     return (
-        <li key={key} className="clubsListItem">
-           <div className="clubsListItem__body _container">
+        <li  className="clubsListItem">
+           <div className="clubsListItem__body">
                 <div className="clubItem-main">
                     <div className="clubItem-main__club">
                         <h1 className="clubItem-main__club_text _title">{club}</h1>

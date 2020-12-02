@@ -21,7 +21,7 @@ function ClubsList({clubsList}) {
     })
 
     return (
-        <div className="clubsList">
+        <div className="clubsList wrapper">
             <div className="clubsList__body _container">
                 <ul className="clubsList__list">
                     {list}

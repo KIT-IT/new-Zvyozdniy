@@ -21,7 +21,7 @@ function Events({month}) {
     })
 
     return (
-        <div className="events">
+        <div className="events wrapper">
             <div className="events__body _container">
                 <div className="events__body_title">
                     <h1 className="_title">Мероприятия</h1>

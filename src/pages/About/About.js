@@ -24,15 +24,15 @@ function About() {
     }
 
     return (
-     <>
-        <div className="info-history ">
+     <div className="info-history wrapper">
+        <div className="info-history__body">
            <div className="info-history-tabs">
               <ul className="tabs-list _container">
                  <li id="1" onClick={handleTabe} className="tabs-list__item">О Доме Культуры</li>
                  <li id="2" onClick={handleTabe} className="tabs-list__item">Историческая справка</li>
               </ul>
            </div>
-           <div className="info-history-main">
+           <div className="info-history-main _container">
               {
                  tab
                     ? <HistoryAbout
@@ -46,7 +46,7 @@ function About() {
               }
            </div>
         </div>
-     </>
+     </div>
     )
 }
 

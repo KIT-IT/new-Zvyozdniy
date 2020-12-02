@@ -11,7 +11,7 @@ function AccordinContent({ href, text, isDocs }) {
                      href={href}
                      rel="noopener noreferrer"
                      target="_blank"
-                     className="accordionDropdown-list__item_link"
+                     className="accordionDropdown-list__item-docs_link"
                   >
                   <span className="accordionDropdown-list__item-docs_text">{text}</span>
                   </a>

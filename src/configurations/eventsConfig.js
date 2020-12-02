@@ -8,7 +8,7 @@ export const eventsConfig = [
         eventPlace: 'ДК Звёздный',
         eventDiscription: 'Онлайн-занятия направлены на знакомство детей с современными танцевальными стилями: современной хореографией (модерн-джаз, контемпорари), клубным и уличным танцами.Онлайн-занятия направлены на знакомство детей с современными танцевальными стилями: современной хореографией (модерн-джаз, контемпорари), клубным и уличным танцами.',
         eventCost: 'Бесплатно',
-        eventImgSrc: require('../assets/images/linkIcons/eventsImages/ole-lukoye.jpg')
+        eventImgSrc: require('../assets/images/eventsImages/ole-lukoye.jpg')
     },
     {
         id: 2, 
@@ -19,7 +19,7 @@ export const eventsConfig = [
         eventPlace: 'ДК Юбелейный',
         eventDiscription: 'Онлайн-занятия направлены на знакомство детей с современными танцевальными стилями: современной хореографией (модерн-джаз, контемпорари), клубным и уличным танцами.Онлайн-занятия направлены на знакомство детей с современными танцевальными стилями: современной хореографией (модерн-джаз, контемпорари), клубным и уличным танцами.',
         eventCost: '150 РУБ',
-        eventImgSrc: require('../assets/images/linkIcons/eventsImages/esenin.jpeg')
+        eventImgSrc: require('../assets/images/eventsImages/esenin.jpeg')
     },
     {
         id: 3, 
@@ -30,6 +30,6 @@ export const eventsConfig = [
         eventPlace: 'Библиотека Минзаг',
         eventDiscription: 'Онлайн-занятия направлены на знакомство детей с современными танцевальными стилями: современной хореографией (модерн-джаз, контемпорари), клубным и уличным танцами.Онлайн-занятия направлены на знакомство детей с современными танцевальными стилями: современной хореографией (модерн-джаз, контемпорари), клубным и уличным танцами.',
         eventCost: '350 РУБ',
-        eventImgSrc: require('../assets/images/linkIcons/eventsImages/silverAutumn.jpg')
+        eventImgSrc: require('../assets/images/eventsImages/silverAutumn.jpg')
     }
 ]

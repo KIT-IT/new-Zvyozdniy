@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './Libraries.scss'
 import {libraryData} from '../../configurations/aboutHistoryConfig'
 import Accordion from '../../components/Accordion/Accordion'
-import { libRulesData } from '../../configurations/libConfig';
+import { libRulesData } from '../../configurations/libConfig'
 
 function Libraries() {
     const list = libraryData.map(lib => {
@@ -30,16 +30,19 @@ function Libraries() {
     })
 
     return (
-        <>
-            <div className="lib">
-                <div className="lib__body _container">
-                    <div className="lib-title _title">
-                        <h1 className="_title">Наши библиотеки</h1>
+            <div className="lib wrapper">
+                <div className="lib__body">
+                    <div className="lib-cards">
+                        <div className="lib-cards__body _container">
+                            <div className="lib-title _title">
+                                <h1 className="_title">Наши библиотеки</h1>
+                            </div>
+                            <ul className="lib-list">
+                                {list}
+                            </ul>
+                        </div>
                     </div>
-                    <ul className="lib-list">
-                        {list}
-                    </ul>
-                    <div className="lib-services">
+                    <div className="lib-services _container">
                         <div className="li-services-title">
                             <h1 className="_title">Услуги</h1>
                         </div>
@@ -72,7 +75,6 @@ function Libraries() {
                     </div>
                 </div>
             </div>
-        </>
     )
 }
 

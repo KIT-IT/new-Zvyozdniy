@@ -2,7 +2,7 @@ export const historyData = {
     about: {
        id: 1,
        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellat necessitatibus distinctio magni vel, tempora iure animi eveniet et eum ipsa temporibus quasi alias dolor amet veritatis molestias iusto cumque commodi recusandae repudiandae voluptatibus ratione! Inventore voluptatem sapiente modi minima hic! Eveniet, est ex suscipit consequatur eius veniam tenetur fugiat obcaecati voluptatum cum esse, ad praesentium facilis magni harum numquam, ratione illo explicabo! Molestiae animi, quaerat quod rem porro optio! Sit, quibusdam explicabo asperiores repudiandae optio iure fugiat natus, eaque tempore voluptatem itaque odit. Quam id ullam necessitatibus ab veritatis, velit asperiores voluptas excepturi aliquid suscipit maxime perspiciatis mollitia nobis!',
-       src: require('../assets/images/linkIcons/zvz.jpeg')
+       src: require('../assets/images/zvz.jpeg')
     },
     history: {
        id: 2,
@@ -26,7 +26,7 @@ export const historyData = {
     },
     {
        id: 3,
-       src: require('../assets/images/linkIcons/pesonalPhoto/helena.JPG'),
+       src: require('../assets/images/pesonalPhoto/helena.JPG'),
        name: 'Мирошниченко Елена Сергеевна',
        position: 'Начальник Отдела Клубных Формирований'
     },
@@ -44,7 +44,7 @@ export const historyData = {
     },
     {
        id: 6,
-       src: require('../assets/images/linkIcons/pesonalPhoto/semen.jpeg'),
+       src: require('../assets/images/pesonalPhoto/semen.jpeg'),
        name: 'Мирошниченко Семен Тимурович',
        position: 'Автор Сайта'
     }
@@ -289,7 +289,7 @@ export const libraryData = [
       ardress: 'г. Москва, поселение Краснопахорское, село Красная Пахра, улица Почтовая, дом № 5 (второй этаж).',
       workTime: 'c 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
       discription: 'Дата основания Краснопахорской библиотеки - 1901 г. Первоначально библиотека находилась в деревянном здании в деревне Красная Пахра. В 1981году Краснопахорская взрослая библиотека переехала в здание Администрации поселения Краснопахорское. В 1994 году Краснопахорская взрослая библиотека переехала в здание общежития Тимирязевской Академии, дом № 21. В 2005 году Краснопахорская взрослая библиотека переезжает в новое здание по улице Почтовой, дом № 5 и располагается на втором этаже. С 1979 г. по 2012 г. Краснопахорская взрослая библиотека входила в состав Подольской районной ЦБС, а с 09.01.2013 года вошла в состав Краснопахорской централизованной библиотечной системы, образованной на территории поселения Краснопахорское. Заведующая библиотекой-филиалом № 1 – Журавская Людмила Викторовна – библиотечный стаж работы в Краснопахорской библиотеке – 25 лет.',
-      img: require('../assets/images/linkIcons/libPhoto/pahraLib.jpg')
+      img: require('../assets/images/libPhoto/pahraLib.jpg')
    },
    {
       id: 2,
@@ -299,7 +299,7 @@ export const libraryData = [
       ardress: 'г. Москва, поселение Краснопахорское, село Красная Пахра, улица Почтовая, дом № 5',
       workTime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
       discription: 'Дата основания Краснопахорской библиотеки - 1901 г. Первоначально библиотека находилась в деревянном здании в деревне Красная Пахра. Затем детская библиотека переехала в здание многоквартирного дома № 15 на центральной усадьбе в селе Красная Пахра. В 2005 году детская библиотека переехала в отдельно стоящее здание № 5 по улице Почтовой в селе Красная Пахра. /с 1979 г. по 2012 г. входила в состав Подольской районной ЦБС; с 1981 года произошло разделение Краснопахорской библиотеки на взрослое отделение и детское/ с 09.01.2013 года Краснопахорская детская библиотека входит в состав Краснопахорской ЦБС Заведующая детской библиотекой-филиалом № 2 – Горячкина Ольга Антоновна, 44 года работает в Краснопахорской библиотеке.',
-      img: require('../assets/images/linkIcons/libPhoto/pahraKidsLib.jpg')
+      img: require('../assets/images/libPhoto/pahraKidsLib.jpg')
    },
    {
       id: 3,
@@ -309,7 +309,7 @@ export const libraryData = [
       ardress: 'г. Москва, поселение Краснопахорское, село Былово, дом 8-А, второй этаж ДК «Юбилейный»',
       workTime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
       discription: 'Дата основания Быловской библиотеки – 1947 год; С 1947 года по 1967 библиотека находилась в деревянном здании в центре села Былово. С 1967 года библиотека переехала в построенный сельский клуб с отдельным входом. После реконструкции в 2003 году библиотека переехала на второй этаж ДК «Юбилейный». С 1979 года по июль 2012 года входила в состав Подольской районной ЦБС. Заведующая Быловской библиотекой-филиалом № 3 – Басова Нина Ивановна - библиотечный стаж работы – 37 лет.',
-      img: require('../assets/images/linkIcons/libPhoto/bilovoLib.jpg')
+      img: require('../assets/images/libPhoto/bilovoLib.jpg')
    },
    {
       id: 4,
@@ -319,7 +319,7 @@ export const libraryData = [
       ardress: 'г. Москва, поселение Краснопахорское, поселок Минзаг, дом 2, цокольный этаж',
       workTime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
       discription: 'Дата основания библиотеки – 1964 год; / с 1964 года по 1983 год библиотека называлась Софьинской и была расположена в клубе деревни Софьино Подольского района Московской области / с 1979 года по июль 2012 года она входила в состав Подольской районной ЦБС /. В поселок подсобного хозяйства Минзаг библиотека переехала в 1984 году, а с 1992 года Софьинская стала называться библиотекой поселка Минзаг. С 2013 года работает в должности заведующей библиотекой Минзаг-филиалом № 4 – Воробьева Вероника Сергеевна.',
-      img: require('../assets/images/linkIcons/libPhoto/minzagLib.jpg')
+      img: require('../assets/images/libPhoto/minzagLib.jpg')
    },
 ]
 
@@ -550,7 +550,7 @@ export const contactsData = [
    {
       id: 1,
       title: 'Муниципальное Бюджетное Учреждение Культуры Дом Культуры "Звёздный"',
-      srcImg: require('../assets/images/linkIcons/zvyozdniy.jpg'),
+      srcImg: require('../assets/images/zvyozdniy.jpg'),
       altImg: 'ДК Звёздный',
       srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3Aca072e9bdf2f728de508ecd73657a748accc0f09ac4e55ffa1f1b5a0c0b71f6a&amp;source=constructor',
       arddressTitle: 'Адрес:',
@@ -563,7 +563,7 @@ export const contactsData = [
    {
       id: 2,
       title: 'Муниципальное Бюджетное Учреждение Культуры Дом Культуры "Юбелейный"',
-      srcImg: require('../assets/images/linkIcons/bilovo.jpg'),
+      srcImg: require('../assets/images/bilovo.jpg'),
       altImg: 'ДК Юбелейный',
       srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5b325c639a59be61ec6758462146451a35a1dfdd0a54c138d09e4264d58aa6d8&amp;source=constructor',
       arddressTitle: 'Адрес:',
@@ -576,7 +576,7 @@ export const contactsData = [
    {
       id: 3,
       title: 'Муниципальное Бюджетное Учреждение Культуры Дом Культуры "Юбелейный"',
-      srcImg: require('../assets/images/linkIcons/bilovoLibImg.jpg'),
+      srcImg: require('../assets/images/bilovoLibImg.jpg'),
       altImg: 'ДК Юбелейный',
       srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5b325c639a59be61ec6758462146451a35a1dfdd0a54c138d09e4264d58aa6d8&amp;source=constructor',
       arddressTitle: 'Адрес:',
@@ -589,7 +589,7 @@ export const contactsData = [
    {
       id: 4,
       title: 'Краснопахорские Библиотека',
-      srcImg: require('../assets/images/linkIcons/pahraLibImg.jpg'),
+      srcImg: require('../assets/images/pahraLibImg.jpg'),
       altImg: 'Краснопахорские Библиотека',
       srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5e32a382f60a3445ac2e29d47650ea9798e68cbe3a24314960781549af94f9af&amp;source=constructor',
       arddressTitle: 'Адрес:',
@@ -602,7 +602,7 @@ export const contactsData = [
    {
       id: 5,
       title: 'Библиотека Минзаг',
-      srcImg: require('../assets/images/linkIcons/minzagLibImg.jpg'),
+      srcImg: require('../assets/images/minzagLibImg.jpg'),
       altImg: 'Библиотека Минзаг',
       srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A7608b4e8c85656e4d3cdefc79af4824895cebb0d1369ab9837a3b92130890ea7&amp;source=constructor',
       arddressTitle: 'Адрес:',

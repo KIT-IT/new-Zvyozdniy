@@ -3,7 +3,7 @@ import './LibreriesItem.scss'
 
 function LibreriesItem({title, subtitle, src, ardres, worktime, phone, historyText, photoSrc1, photoSrc2, photoSrc3, srcToMap}) {
     return (
-        <div className="libreriesItem">
+        <div className="libreriesItem wrapper">
             <div className="libreriseItem__body _container">
                 <div className="libreriesItem-title">
                     <h1 className="ibreriesItem-title__title _title">{title}</h1>

@@ -2,7 +2,7 @@ import React from 'react'
 import PersonalItem from './PersonalItem'
 import { personalData } from '../../../configurations/aboutHistoryConfig'
 import './Personal.scss'
-import template from '../../../assets/images/linkIcons/pesonalPhoto/template.jpg'
+import template from '../../../assets/images/pesonalPhoto/template.jpg'
 
 function Personal() {
    const lists = personalData.map(i => {
@@ -17,16 +17,14 @@ function Personal() {
 
 
    return (
-      <>
-         <div id="team" className="personal ">
-            <div className="personal__body container _container">
+         <div id="team" className="personal wrapper">
+            <div className="personal__body _container">
                <h1 className="personal__title _title">Наша Команда</h1>
                <div className="personal__list">
                   {lists}
                </div>
             </div>
          </div>
-      </>
    )
 }
 

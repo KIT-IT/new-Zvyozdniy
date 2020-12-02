@@ -5,9 +5,8 @@ import Accordion from '../../../components/Accordion/Accordion'
 
 function Documents() {
    return (
-      <>
-         <div id="info" className="documents">
-            <div className="documents-body _container">
+         <div id="info" className="documents wrapper">
+            <div className="documents__body _container">
                <div className="documents-header">
                   <h1 className="documents-header__title _title">Правовая Информация</h1>
                   <ul className="documents-header-info-list">
@@ -24,7 +23,6 @@ function Documents() {
                />
             </div>
          </div>
-      </>
    )
 }
 

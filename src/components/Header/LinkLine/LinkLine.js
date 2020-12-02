@@ -8,27 +8,27 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
-const LinkLine = () =>  (
+const LinkLine = ({cls}) =>  (
     <div className="link-line">
         <ul className="link-line-list">
             <li className="link-line-list__item">
                 <Link className="link-line-list__item_link" to={'/'}>
-                    <FontAwesomeIcon className='icon' icon={faFacebookF} />
+                    <FontAwesomeIcon className={cls} icon={faFacebookF} />
                 </Link>
             </li>
             <li className="link-line-list__item">
                 <Link className="link-line-list__item_link" to={'/'}>
-                    <FontAwesomeIcon className='icon' icon={faVk} />
+                    <FontAwesomeIcon className={cls} icon={faVk} />
                 </Link>
             </li>
             <li className="link-line-list__item">
                 <Link className="link-line-list__item_link" to={'/'}>
-                    <FontAwesomeIcon className='icon' icon={faInstagram} />
+                    <FontAwesomeIcon className={cls} icon={faInstagram} />
                 </Link>
             </li>
             <li className="link-line-list__item">
                 <Link className="link-line-list__item_link" to={'/'}>
-                    <FontAwesomeIcon className='icon' icon={faTwitter} />
+                    <FontAwesomeIcon className={cls} icon={faTwitter} />
                 </Link>
             </li>
         </ul>

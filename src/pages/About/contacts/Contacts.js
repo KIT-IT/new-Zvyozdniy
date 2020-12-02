@@ -23,8 +23,7 @@ function Contacts() {
     })
 
     return (
-        <>
-         <div className="contacts">
+         <div className="contacts wrapper">
             <div className="contacts__body _container">
                <div className="contacts__title _title">Контакты</div>
                 <ul className="contacts-list">
@@ -34,7 +33,6 @@ function Contacts() {
                </div>
             </div>
          </div>
-      </>
     )
 }
 

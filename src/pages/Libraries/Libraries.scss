@@ -1,5 +1,15 @@
+@import '../../scss/style.scss';
+
 .lib {
     &__body {}
+}
+
+.lib-cards {
+    background: url("../../assets/images/backgroundImages/libraries-background.jpg") 0 0/cover no-repeat fixed;
+}
+
+.lib-title {
+    color: white;
 }
 
 .lib-list {
@@ -7,10 +17,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 50px;
+    @media (max-width: $md2+px) {
+        flex-wrap: wrap;
+        margin: 0;
+    }
     &__item {}
 }
 
 .lib-item {
+    @media (max-width: $md2+px) {
+        margin: 30px 20px;
+    }
+    @media (max-width: $md3+px) {
+        margin: 30px auto;
+    }
     &__body {
         display: inline-block;
         position: relative;
@@ -19,6 +40,18 @@
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);;
         width: 230px;
         height: 300px;
+        @media (max-width: $md2+px) {
+            width: 300px;
+            height: 340px;
+        }
+        @media (max-width: $md3+px) {
+            width: 450px;
+            height: 340px;
+        }
+        @media (max-width: $md4+px) {
+            width: 300px;
+            height: 240px;
+        }
     }
     &__head {
             position: absolute;
@@ -28,6 +61,17 @@
             width: 215px;
             border-radius: 10px;
             box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+            @media (max-width: $md2+px) {
+                width: 285px;
+            }
+            @media (max-width: $md3+px) {
+                width: 435px;
+                height: 240px;
+            }
+            @media (max-width: $md4+px) {
+                width: 285px;
+                height: 150px;
+            }
         }
         &_text {
             position: absolute;
@@ -43,6 +87,12 @@
 
 .lib-content {
     margin-top: 70%;
+    @media (max-width: $md3+px) {
+        margin-top: 55%;
+    }
+    @media (max-width: $md4+px) {
+        margin-top: 50%;
+    }
     &__phone {
         &_text {
             text-align: center;
@@ -53,6 +103,9 @@
     }
     &__info {
         margin-top: 30px;
+        @media (max-width: $md4+px) {
+            margin-top: 15px;
+        }
         &_text {
             text-align: center;
             color: #3b3b3b;
@@ -66,8 +119,6 @@
     margin: 30px 0;
     &__item {
         padding: 5px 0;
-        font-size: 17px;
-        color: #3b3b3b;
         font-weight: 30px;
     }
 }

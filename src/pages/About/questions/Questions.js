@@ -5,9 +5,8 @@ import { questionsSignUpData,questionsFirstVisitData,questionsPaymentData,questi
  
 function Questions() {
     return (
-        <>
-          <div className="questions">
-              <div className="questions-body _container">
+          <div className="questions wrapper">
+              <div className="questions__body _container">
                     <div className="questions__title">
                           <h1 className="_title">Ответы на часто возникающие вопросы</h1>
                     </div>
@@ -37,7 +36,6 @@ function Questions() {
                     </div>
               </div>
           </div>
-        </>
     )
 }
 
