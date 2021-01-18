@@ -1,27 +1,26 @@
 import React, { useState,useEffect } from 'react'
-import './Header.scss'
-import LinkInfoLine from './LinkInfoLine/LinkInfoLine'
-
+import HeaderMediaSection from './HeaderMediaSection/HeaderMediaSection'
 import zvzLogo from '../../assets/images/logo.png'
 import {Link} from "react-router-dom";
-import Nav from "../Navigation/Navigation";
+import Navigation from "./Navigation/Navigation";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { faSearch, faAngleUp, faGlasses } from '@fortawesome/free-solid-svg-icons'
-import VisImpared from './VisImpaired/VisImpared'
+import VisualImpairedSection from './VisualImpairedSection/VisualImpairedSection'
+import Form from "../Form/Form";
 
 
 function Header() {
-    const [visImpared, setVisImpared] = useState(false)
-    const [mobileMenu, setMobilemenu] = useState(false)
-    const [cls, setCls] = useState("nav")
+    const [visualImpaired, setVisualImpaired] = useState(false)
+    const [mobileMenu, setMobileMenu] = useState(false)
     const [arrow, setArrow] = useState(false)
+    const [navigationClass, setNavigationClass] = useState("navigation")
+    const [form, setForm] = useState(false)
 
-    const handleHeader = () => {
-        if (window.pageYOffset >= 200) {
-            setCls(" fixed")
+    const handleMobileHeader = () => {
+        if (window.pageYOffset >= 400) {
+            setNavigationClass("fixed-navigation")
         } else {
-            setCls("nav")
+            setNavigationClass("navigation")
         }
     }
 
@@ -44,42 +43,59 @@ function Header() {
 
 
     const handleMobileMenu = () => {
-        if (window.innerWidth <= 770) {
-            setMobilemenu(true)
+        if (window.innerWidth <= 900) {
+            setMobileMenu(true)
         } else {
-            setMobilemenu(false)
+            setMobileMenu(false)
         }
     }
 
-    document.addEventListener('scroll', handleHeader)
-    document.addEventListener('scroll', handleArrow)
+    const handleFormOpen = () => {
+        setForm(true)
+        document.body.style.overflow = "hidden"
+    }
+
+    const handleFormClose = (e) => {
+        if (e.target.className === "form-wrapper" || e.target.getAttribute('id') === "form-close") {
+            setForm(false)
+            document.body.style.overflow = "visible"
+        }
+    }
+
 
 
 
     useEffect(() => {
         window.addEventListener('resize', handleMobileMenu)
-
+        document.addEventListener('scroll', handleArrow)
+        document.addEventListener('scroll', handleMobileHeader)
         handleMobileMenu()
         return () => {
-           window.removeEventListener('resize', handleMobileMenu)
+            window.removeEventListener('resize', handleMobileMenu)
+            document.removeEventListener('scroll', handleArrow)
+            document.removeEventListener('scroll', handleMobileHeader)
         }
     }, [])
 
-        const handleImpared = () => {
-            setVisImpared(!visImpared)
+        const handleImpaired = () => {
+            setVisualImpaired(true)
+            if (visualImpaired) {
+                const imp = document.querySelector('.visual-impaired')
+                imp.classList.toggle('hide-visual-impaired-panel')
+            }
         }
 
 
-
     return (
-        <div>
-        { visImpared ? <VisImpared setVisImpared={setVisImpared} visImpared={visImpared}/> : null}
-        {
-        mobileMenu 
-            ? <Nav/>
-            : <>
-                <LinkInfoLine />
-                <div className="header-main">
+        <div className="con">
+          { form ? <Form title={"Ваше сообщение"} isPopup={true} handleFormClose={handleFormClose}/> : null}
+          { visualImpaired ? <VisualImpairedSection setVisualImpaired={setVisualImpaired} visualImpaired={visualImpaired}/> : null}
+          {
+           mobileMenu
+            ? <Navigation handleFormOpen={handleFormOpen}/>
+            : <div className="header element-with-changing-styles">
+                <HeaderMediaSection />
+                <div className="header-main ">
                     <div className="header-main-body _container">
                         <div className="header-info">
                             <div className="header-info-body">
@@ -89,24 +105,24 @@ function Header() {
                                     </Link>
                                 </div>
                                 <div className="header-info-search">
-                                    <FontAwesomeIcon className="header-info-search__img icon" icon={faSearch}  color={'#3b3b3b'}/>
-                                    <input type="text" className="header-info-search__input" placeholder="Поиск по сайту"/>
+                                    <FontAwesomeIcon className="header-info-search__img icon element-with-changing-styles" icon={faSearch}  color={'#fff'}/>
+                                    <input type="text" className="header-info-search__input input element-with-changing-styles" placeholder="Поиск по сайту"/>
                                 </div>
                                 <div className="header-info-contacts">
+                                    <div className="info-glasses" onClick={handleImpaired}>
+                                        <FontAwesomeIcon className="element-with-changing-styles"  icon={faGlasses} color={'#fff'} style={{fontSize: '15px'}}/>
+                                        <p className="info-glasses__text">Версия для слабовидящих</p>
+                                    </div>
                                     <div className="header-info-forms">
-                                        <button className="header-info-forms__button button">
+                                        <button className="header-info-forms__button button element-with-changing-styles" onClick={handleFormOpen}>
                                             <span className="header-info-forms__button_text">Обратная связь</span>
                                         </button>
-                                    </div>
-                                    <div className="info-glasses" onClick={handleImpared}>
-                                        <FontAwesomeIcon  icon={faGlasses} color={'inherit'} style={{fontSize: '15px'}}/>
-                                        <p className="info-glasses__text">Версия для слабовидящих</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className={cls}>
-                            <Nav />
+                        <div className={navigationClass}>
+                            <Navigation navigationClass={navigationClass} />
                         </div>
                     </div>
                 </div>
@@ -115,7 +131,7 @@ function Header() {
                      ? <div className="icon-body" onClick={handleScroll}><FontAwesomeIcon className="fixed-icon" icon={faAngleUp} /></div>
                      : null
                 }
-                </>
+               </div>
             }
         </div>
     );

@@ -1,34 +1,38 @@
 import React, { useState } from 'react'
+import PlusToMinus from "../../PlusToMinus/PlusToMinus";
 
+function AccordionHead({ dropdownContent, title, isList }) {
+   const [isDrop, setIsDrop] = useState(false)
 
-function AccordionHead({ drop, title, isList }) {
-   const [isDrop, setisDrop] = useState(false)
-
-   const handelDropdown = () => {
-      setisDrop(!isDrop)
+   const handleDropdown = () => {
+      setIsDrop(!isDrop)
    }
+
    return (
-      <>
          <li className="accordion-list__item" >
-            <div onClick={handelDropdown} className={!isDrop ? "default" : "pushed"}>
-               <span className="accordion-list__item_text">{!isDrop ? title : 'Выйти'}</span>
+            <div onClick={handleDropdown} className={!isDrop ? "default-accordion-styles element-with-changing-styles" : "pushed-accordion-styles element-with-changing-styles"}>
+               <span className="accordion-list__item_text">{title}</span>
+               {
+                  isDrop
+                      ? <PlusToMinus cl={"opened"}/>
+                      : <PlusToMinus cl={"closed"}/>
+               }
             </div>
             {
                isDrop
-                  ? <div className="accordionDropdown">
-                     <div className="accordionDropdown__body">
+                  ? <div className="accordion-dropdown">
+                     <div className="accordion-dropdown__body element-with-changing-styles">
                          { isList  
-                              ? <ul className="accordionDropdown-list">
-                                    {drop}
+                              ? <ul className="accordion-dropdown-list">
+                                    {dropdownContent}
                                  </ul>
-                              : <div className="accordioDropdown-paragraf">{drop}</div> 
+                              : <div className="accordion-dropdown-paragraph">{dropdownContent}</div>
                          }
                      </div>
                   </div>
                   : null
             }
          </li>
-      </>
    )
 }
 

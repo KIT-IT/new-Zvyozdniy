@@ -1,6 +1,5 @@
 import React from 'react'
-import { festivalsConfig } from '../../configurations/festivalsConfig'
-import './Festivals.scss'
+import { festivalsConfig } from '../../configurations/festivalsPageConfigurations/festivalsConfig'
 import FestivalsItem from './FestivalsItem/FestivalsItem'
 
 function Festivals() {
@@ -8,20 +7,22 @@ function Festivals() {
   return (
     <FestivalsItem
       key={item.id}
-      src={item.img}
+      backgroundImage={item.backgroundImage}
       title={item.title}
       name={item.name}
       text={item.info}
+      place={item.place}
+      date={item.date}
+      age={item.age}
     />
   )
  })
 
  return (
   <div className="festivals wrapper">
-    <div className="festivals__body _container">
-      <h1 className="festivals__body_title _title">Фестивали</h1>
-      <div className="festivals__body_content">
-        <ul className="festivals-list">
+    <div className="festivals__body">
+      <div className="festivals-content">
+        <ul className="festivals-content__list festivals-list">
           {list}
         </ul>
       </div>

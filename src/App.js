@@ -1,22 +1,22 @@
 import React from 'react';
-import './scss/style.scss'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from "./components/Footer/Footer";
 import Main from "./pages/Main/Main";
 import About from './pages/About/About';
-import Personal from './pages/About/personal/Personal';
-import Documents from './pages/About/documents/Documents';
+import Personal from './pages/About/Personal/Personal';
+import Documents from './pages/About/Documents/Documents';
 import Libraries from './pages/Libraries/Libraries';
-import Questions from './pages/About/questions/Questions';
-import Contacts from './pages/About/contacts/Contacts';
-import LibreriesItem from './pages/Libraries/LibreriesItem/LibreriesItem';
-import {pahraLib,pahraKidsLib,bilovoLib,minzagLib} from './configurations/libConfig'
+import Questions from './pages/About/Questions/Questions';
+import Contacts from './pages/About/Contacts/Contacts';
+import LibrariesItem from './pages/Libraries/LibrariesItem/LibrariesItem';
+import {pahraLibrary,pahraKidsLibrary,bilovoLibrary,minzagLibrary} from './configurations/librariesPageConfigurations/librariesItemsConfig'
 import Events from './pages/Events/Events';
 import Clubs from './pages/Clubs/Clubs';
 import ClubsList from './pages/Clubs/ClubsList/ClubsList';
-import {clubsCircList, clubsYoungersList, clubsArtList, clubsVocalList, clubsDanceList, clubsTheatreList, clubsOldersList} from './configurations/clubsListConfig'
+import {circusClubs, earlyDevelopmentClubs, artClubs, vocalClubs, danceClubs, theatreClubs, longevityClubs} from './configurations/clubsPageConfigurations/clubsListsConfig'
 import Festivals from './pages/Festivals/Festivals';
+import Services from "./pages/Services/Services";
 
 
 function App() {
@@ -25,95 +25,96 @@ function App() {
         <Header/>
         <Switch>
             <Route path="/" exact component={Main}/>
+            <Route path="/services" component={Services}/>
             <Route path="/about" component={About} />
             <Route path="/personal" component={Personal} />
             <Route path="/documents" component={Documents} />
             <Route path="/questions" component={Questions} />
             <Route path="/contacts" component={Contacts} />
-            <Route path="/libraries" component={Libraries} />
+            <Route path="/libraries" exact component={Libraries} />
             <Route path="/festivals" component={Festivals} />
 
 
-            <Route path="/libreries/pahraLib">
-              <LibreriesItem 
-                title={pahraLib.title}
-                subtitle={pahraLib.subtitle}  
-                src={pahraLib.src}
-                ardres={pahraLib.arders}
-                worktime={pahraLib.worktime}
-                phone={pahraLib.phone}
-                historyText={pahraLib.historyText}
-                photoSrc1={pahraLib.photoSrc1}            
-                photoSrc2={pahraLib.photoSrc2}            
-                photoSrc3={pahraLib.photoSrc3}       
-                srcToMap={pahraLib.srcToMap}     
+            <Route path="/libraries/pahra-library">
+              <LibrariesItem
+                title={pahraLibrary.title}
+                subtitle={pahraLibrary.subtitle}
+                src={pahraLibrary.src}
+                address={pahraLibrary.address}
+                worktime={pahraLibrary.worktime}
+                phone={pahraLibrary.phone}
+                historyText={pahraLibrary.historyText}
+                photoSrc1={pahraLibrary.photoSrc1}
+                photoSrc2={pahraLibrary.photoSrc2}
+                photoSrc3={pahraLibrary.photoSrc3}
+                srcToMap={pahraLibrary.srcToMap}
               />
             </Route>
 
-            <Route path="/libreries/pahraKidsLib">
-              <LibreriesItem 
-                title={pahraKidsLib.title}
-                subtitle={pahraKidsLib.subtitle}  
-                src={pahraKidsLib.src}
-                ardres={pahraKidsLib.arders}
-                worktime={pahraKidsLib.worktime}
-                phone={pahraKidsLib.phone}
-                historyText={pahraKidsLib.historyText}
-                photoSrc1={pahraKidsLib.photoSrc1}            
-                photoSrc2={pahraKidsLib.photoSrc2}            
-                photoSrc3={pahraKidsLib.photoSrc3}       
-                srcToMap={pahraKidsLib.srcToMap}     
+            <Route path="/libraries/pahra-kids-library">
+              <LibrariesItem
+                title={pahraKidsLibrary.title}
+                subtitle={pahraKidsLibrary.subtitle}
+                src={pahraKidsLibrary.src}
+                address={pahraKidsLibrary.address}
+                worktime={pahraKidsLibrary.worktime}
+                phone={pahraKidsLibrary.phone}
+                historyText={pahraKidsLibrary.historyText}
+                photoSrc1={pahraKidsLibrary.photoSrc1}
+                photoSrc2={pahraKidsLibrary.photoSrc2}
+                photoSrc3={pahraKidsLibrary.photoSrc3}
+                srcToMap={pahraKidsLibrary.srcToMap}
               />
             </Route>
 
-            <Route path="/libreries/bilovoLib">
-              <LibreriesItem 
-                title={bilovoLib.title}
-                subtitle={bilovoLib.subtitle}  
-                src={bilovoLib.src}
-                ardres={bilovoLib.arders}
-                worktime={bilovoLib.worktime}
-                phone={bilovoLib.phone}
-                historyText={bilovoLib.historyText}
-                photoSrc1={bilovoLib.photoSrc1}            
-                photoSrc2={bilovoLib.photoSrc2}            
-                photoSrc3={bilovoLib.photoSrc3}       
-                srcToMap={bilovoLib.srcToMap}     
+            <Route path="/libraries/bilovo-library">
+              <LibrariesItem
+                title={bilovoLibrary.title}
+                subtitle={bilovoLibrary.subtitle}
+                src={bilovoLibrary.src}
+                address={bilovoLibrary.address}
+                worktime={bilovoLibrary.worktime}
+                phone={bilovoLibrary.phone}
+                historyText={bilovoLibrary.historyText}
+                photoSrc1={bilovoLibrary.photoSrc1}
+                photoSrc2={bilovoLibrary.photoSrc2}
+                photoSrc3={bilovoLibrary.photoSrc3}
+                srcToMap={bilovoLibrary.srcToMap}
               />
             </Route>
 
-            <Route path="/libreries/minzagLib">
-              <LibreriesItem 
-                title={minzagLib.title}
-                subtitle={minzagLib.subtitle}  
-                src={minzagLib.src}
-                ardres={minzagLib.arders}
-                worktime={minzagLib.worktime}
-                phone={minzagLib.phone}
-                historyText={minzagLib.historyText}
-                photoSrc1={minzagLib.photoSrc1}            
-                photoSrc2={minzagLib.photoSrc2}            
-                photoSrc3={minzagLib.photoSrc3}       
-                srcToMap={minzagLib.srcToMap}     
+            <Route path="/libraries/minzag-library">
+              <LibrariesItem
+                title={minzagLibrary.title}
+                subtitle={minzagLibrary.subtitle}
+                src={minzagLibrary.src}
+                address={minzagLibrary.address}
+                worktime={minzagLibrary.worktime}
+                phone={minzagLibrary.phone}
+                historyText={minzagLibrary.historyText}
+                photoSrc1={minzagLibrary.photoSrc1}
+                photoSrc2={minzagLibrary.photoSrc2}
+                photoSrc3={minzagLibrary.photoSrc3}
+                srcToMap={minzagLibrary.srcToMap}
               />
             </Route>
 
             <Route path="/events"><Events month="Октябрь"/></Route>
-            <Route path="/clubs" component={Clubs}/>
+            <Route path="/clubs" exact component={Clubs}/>
 
-            <Route path="/youngers"><ClubsList clubsList={clubsYoungersList}/></Route>
+            <Route path="/clubs/early-development"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
             
-            <Route path="/circ"><ClubsList clubsList={clubsCircList}/></Route>
+            <Route path="/clubs/circus"><ClubsList clubsList={circusClubs} title={"Направления оригинального жанра"} abbreviated={"Оригинальный жанр"}/></Route>
 
-            <Route path="/art"><ClubsList clubsList={clubsArtList}/></Route>
+            <Route path="/clubs/art"><ClubsList clubsList={artClubs} title={"Декоративно-прикладное и изобразительное искусство"} abbreviated={"Арт"}/></Route>
 
-            <Route path="/music"><ClubsList clubsList={clubsVocalList}/></Route>
+            <Route path="/clubs/music"><ClubsList clubsList={vocalClubs} title={"Вокальное искусство и музыкальное развитие"} abbreviated={"Музыка"}/></Route>
 
-            <Route path="/dance"><ClubsList clubsList={clubsDanceList}/></Route>
+            <Route path="/clubs/dance"><ClubsList clubsList={danceClubs} title={"Танцевально-спортивное направление"} abbreviated={"Танцы"}/></Route>
 
-            <Route path="/theatre"><ClubsList clubsList={clubsTheatreList}/></Route>
+            <Route path="/clubs/theatre"><ClubsList clubsList={theatreClubs} title={"Театральное искусство"} abbreviated={"Театр"}/></Route>
 
-            <Route path="/moscow-longevity"><ClubsList clubsList={clubsOldersList}/></Route>
+            <Route path="/clubs/moscow-longevity"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
 
         </Switch>
         <Footer />

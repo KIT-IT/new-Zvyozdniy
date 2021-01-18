@@ -1,26 +1,27 @@
 import React from 'react'
 
 
-function AccordinContent({ href, text, isDocs }) {
+function AccordionContent({ href, text, isDocs }) {
    return (
       <>
         {isDocs
             ?
-              <li className="accordionDropdown-list__item-docs">
+              <li className="accordion-dropdown-list__documents">
                   <a
                      href={href}
                      rel="noopener noreferrer"
                      target="_blank"
-                     className="accordionDropdown-list__item-docs_link"
+                     className="accordion-dropdown-list__documents_link"
                   >
-                  <span className="accordionDropdown-list__item-docs_text">{text}</span>
+                  <span className="accordion-dropdown-list__documents_text">{text}</span>
                   </a>
               </li>
-            :  <li className="accordionDropdown-list__item-p">
-                  <p className="accordionDropdown-list__item-p_text">{text}</p>               
-               </li>}
+            :  <li className="accordion-dropdown-list__paragraph">
+                  <p className="accordion-dropdown-list__paragraph_text">{text}</p>
+               </li>
+        }
       </>
    )
 }
 
-export default AccordinContent
+export default AccordionContent

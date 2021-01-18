@@ -1,15 +1,16 @@
 import React from 'react';
-import './Main.scss'
-import Slider from '../../components/Slider/Slider';
+import EventsPreview from "./EventsPreview/EventsPreview";
+import NewsPreview from "./NewsPreview/NewsPreview";
 
 function Main() {
     return (
         <div className="main wrapper">
-            <div className="preview">
-                <h1 className="_title">Дом Культуры ЗВЁЗДНЫЙ</h1>
-            </div>
-            <div className="slider">
-                <Slider/>
+           <div className="main-preview"></div>
+            <div className="main-content">
+                <div className="main-content__body">
+                    {<EventsPreview/>}
+                    {<NewsPreview/>}
+                </div>
             </div>
         </div>
     );

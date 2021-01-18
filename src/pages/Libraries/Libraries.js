@@ -1,28 +1,25 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './Libraries.scss'
-import {libraryData} from '../../configurations/aboutHistoryConfig'
+import {libraryData} from '../../configurations/librariesPageConfigurations/librariesCardsConfig'
 import Accordion from '../../components/Accordion/Accordion'
-import { libRulesData } from '../../configurations/libConfig'
+import { libRulesData } from '../../configurations/librariesPageConfigurations/librariesVisitingRulesConfig'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShare  } from  '@fortawesome/free-solid-svg-icons'
+import PagePreview from "../../components/PagePrewievImageNavigation/PagePreview";
 
 function Libraries() {
     const list = libraryData.map(lib => {
         return (
-            <li className="lib-list__item lib-item" key={lib.id}>
+            <li className="lib-list__item lib-item element-with-changing-styles" key={lib.id}>
                 <Link to={lib.to} >
                     <div className="lib-item__body">
                         <div className="lib-item__head">
                             <img className="lib-item__head_img" src={lib.img} alt={lib.name}/>
-                            <p className="lib-item__head_text">{lib.name}</p>
-                        </div>
-                        <div className="lib-item__contetnt lib-content">
-                            <div className="lib-content__phone">
-                                <p className="lib-content__phone_text">{lib.phone}</p>
-                            </div>
-                            <div className="lib-content__info">
-                                <p className="lib-content__info_text">{lib.workTime}</p>
+                            <div className="image-overlay">
+                                <p className="image-overlay__text">Подробнее</p>
                             </div>
                         </div>
+                        <p className="lib-item__head_text">{lib.name}</p>
                     </div>
                 </Link>  
             </li>
@@ -32,46 +29,53 @@ function Libraries() {
     return (
             <div className="lib wrapper">
                 <div className="lib__body">
+                    <PagePreview
+                        title={"Наши Библиотеки"}
+                        backgroundImage={require("../../assets/images/backgroundImages/librariesBackground.jpg")}
+                        isNested={true}
+                        secondPageName={"Библиотеки"}
+                    />
                     <div className="lib-cards">
                         <div className="lib-cards__body _container">
-                            <div className="lib-title _title">
-                                <h1 className="_title">Наши библиотеки</h1>
-                            </div>
                             <ul className="lib-list">
                                 {list}
                             </ul>
                         </div>
                     </div>
-                    <div className="lib-services _container">
-                        <div className="li-services-title">
-                            <h1 className="_title">Услуги</h1>
+                    <div className="lib-services _content element-with-changing-styles">
+                        <div className="lib-services-title _container">
+                            <h1 className="_subtitle">Услуги</h1>
                         </div>
-                        <div className="lib-services-subtitle">
-                            <h2 className="_subtitle">Предоставление бесплатных услуг</h2>
+                        <div className="lib-services-subtitle _container">
+                            <h2 className="lib-services-subtitle_text _heading element-with-changing-styles">Предоставление бесплатных услуг</h2>
                         </div>
-                        <ul className="lib-services-list">
-                            <li className="lib-services-list__item">Регистрация пользователей библиотеки</li>
-                            <li className="lib-services-list__item">Выдача для временного пользования документов из имеющегося библиотечного фонда</li>
-                            <li className="lib-services-list__item">Поиск информации в справочно-поисковом аппарате</li>
-                            <li className="lib-services-list__item">Оперативные справочно-библиографические услуги ( за исключением составления тематических списков литературы, предоставления письменных справок справочно-библиографического содержания)</li>
-                            <li className="lib-services-list__item">Информация о библиотеках и центрах научной информации города Москвы с помощью сети Интернет</li>
-                            <li className="lib-services-list__item">Доступ к книжным выставкам из фондов библиотеки</li>
-                            <li className="lib-services-list__item">Предварительный заказ документов, бронирование и продление срока бронирования в читательном зале</li>
-                            <li className="lib-services-list__item">Экскурсионные услуги</li>
-                            <li className="lib-services-list__item">Ксерокопирование</li>
-                            <li className="lib-services-list__item">Печать на принтере</li>
-                            <li className="lib-services-list__item">Сканирование</li>
-                            <li className="lib-services-list__item">Выполнение тематической справки по ресурсам Интернет</li>
-                            <li className="lib-services-list__item">Индивидуальная консультация по поиску в Интернет</li>
-                            <li className="lib-services-list__item">Проведение культурно-массовых мероприятий с привлечением сторонних организаций</li>
-                            <li className="lib-services-list__item">Предоставление рабочих мест, оборудованных компьютерами для пользователей библиотеки</li>
-                        </ul>
+                        <div className="lib-services-list-body _container">
+                            <ul className="lib-services-list ">
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Регистрация пользователей библиотеки</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Выдача для временного пользования документов из имеющегося библиотечного фонда</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Поиск информации в справочно-поисковом аппарате</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Оперативные справочно-библиографические услуги ( за исключением составления тематических списков литературы, предоставления письменных справок справочно-библиографического содержания)</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Информация о библиотеках и центрах научной информации города Москвы с помощью сети Интернет</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Доступ к книжным выставкам из фондов библиотеки</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Предварительный заказ документов, бронирование и продление срока бронирования в читательном зале</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Экскурсионные услуги</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Ксерокопирование</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Печать на принтере</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Сканирование</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Выполнение тематической справки по ресурсам Интернет</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Индивидуальная консультация по поиску в Интернет</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Проведение культурно-массовых мероприятий с привлечением сторонних организаций</p></li>
+                                <li className="lib-services-list__item"><FontAwesomeIcon className="lib-services-list__item_icon element-with-changing-styles" icon={faShare}/><p className="lib-services-list__item_text">Предоставление рабочих мест, оборудованных компьютерами для пользователей библиотеки</p></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="lib-rules">
-                        <div className="lib-rules__title">
-                            <h1 className="_title">Правила Посещения</h1>
+                    <div className="lib-rules _container">
+                        <div className="lib-rules__body  _content">
+                            <div className="lib-rules__title">
+                                <h1 className="_subtitle">Правила Посещения</h1>
+                            </div>
+                            <Accordion accordionConfig={libRulesData} isDocs={false} isList={true}/>
                         </div>
-                        <Accordion dataConst={libRulesData} isDocs={false} isList={true}/>
                     </div>
                 </div>
             </div>

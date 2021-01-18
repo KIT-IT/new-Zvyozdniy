@@ -31,7 +31,6 @@ body {
   min-width: $minWidth;
 }
 body {
-  line-height: 1;
   font-family: $fontFamily;
   //text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
@@ -74,6 +73,18 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+form button, form input, form select, form textarea {
+  appearance: none;
+  //border: none;
+  border-radius: 0px;
+  box-sizing: border-box;
+  resize: none;
+  margin: 0px;
+  position: relative;
+  z-index: 1;
+  outline: none !important;
 }
 //-webkit-overflow-scrolling: touch;
 //animation-play-state: paused !important;

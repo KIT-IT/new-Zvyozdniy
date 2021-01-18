@@ -1,50 +1,43 @@
 import React, {useState} from 'react'
-import HistoryAbout from './HistoryAbout'
-import {historyData} from '../../configurations/aboutHistoryConfig'
-import './About.scss'
+import AboutContentComponent from './AboutContentComponent'
+import {aboutContentConfig} from '../../configurations/aboutPageConfigurations/aboutContentConfig'
+import PagePreview from "../../components/PagePrewievImageNavigation/PagePreview";
 
 function About() {
-    const [tab, setTab] = useState(true)
+    const [activeIndex, setActiveIndex] = useState(1);
 
-    const handleTabe = (event) => {
-       if (event.target.id === "1") {
-          if (tab === true) {
-             setTab(tab)
-          } else {
-             setTab(!tab)
-          }
-       }
-       if (event.target.id === "2") {
-          if (tab === true) {
-             setTab(!tab)
-          } else {
-             setTab(tab)
-          }
-       }
+    const [component, setComponent] = useState(<AboutContentComponent heading={aboutContentConfig.about.heading} text={aboutContentConfig.about.text} src={aboutContentConfig.about.src}/>)
+    function handleFirstCompopnent() {
+        setComponent(<AboutContentComponent heading={aboutContentConfig.about.heading} text={aboutContentConfig.about.text} src={aboutContentConfig.about.src}/>)
+        setActiveIndex(1)
     }
 
+    function handleSecondCompopnent() {
+        setComponent(<AboutContentComponent heading={aboutContentConfig.history.heading} text={aboutContentConfig.history.text} src={aboutContentConfig.history.src}/>)
+        setActiveIndex(2)
+    }
+
+
     return (
-     <div className="info-history wrapper">
-        <div className="info-history__body">
-           <div className="info-history-tabs">
-              <ul className="tabs-list _container">
-                 <li id="1" onClick={handleTabe} className="tabs-list__item">О Доме Культуры</li>
-                 <li id="2" onClick={handleTabe} className="tabs-list__item">Историческая справка</li>
+     <div className="about wrapper">
+        <div className="about__body">
+           <PagePreview
+               title={"О Доме Культуры"}
+               backgroundImage={require("../../assets/images/backgroundImages/aboutBackground.jpeg")}
+               isNested={true}
+               secondPageName={"О Нас"}
+           />
+           <div className="about-switch-panel">
+              <ul className="about-switch-panel-list _container">
+                 <li id="1" onClick={handleFirstCompopnent} className="about-switch-panel-list__item">
+                     <p className={activeIndex === 1 ? "about-switch-panel-list__item_active" : null} >О Доме Культуры</p>
+                 </li>
+                 <li id="2" onClick={handleSecondCompopnent} className="about-switch-panel-list__item">
+                     <p className={activeIndex === 2 ? "about-switch-panel-list__item_active" : null}>Историческая справка</p>
+                 </li>
               </ul>
            </div>
-           <div className="info-history-main _container">
-              {
-                 tab
-                    ? <HistoryAbout
-                       text={historyData.about.text}
-                       src={historyData.about.src}
-                    />
-                    : <HistoryAbout
-                       text={historyData.history.text}
-                       src={historyData.history.src}
-                    />
-              }
-           </div>
+           { component }
         </div>
      </div>
     )

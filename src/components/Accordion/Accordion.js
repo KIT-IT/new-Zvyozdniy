@@ -1,16 +1,15 @@
 import React from 'react'
 import AccordionHead from './AccordionHead/AccordionHead'
 import AccordionContent from './AccordionHead/AccordionContent/AccordionContent'
-import './Accordion.scss'
 
-function Accordion({dataConst, isList, isDocs}) {
-    const list = dataConst.map(item => {
+function Accordion({accordionConfig, isList, isDocs}) {
+    const list = accordionConfig.map(item => {
         return (
             <AccordionHead
                key={item.id}
                title={item.text}
                isList={isList}
-               drop={
+               dropdownContent={
                   item.drop.map(i => {
                       return (
                         isList 
@@ -20,7 +19,7 @@ function Accordion({dataConst, isList, isDocs}) {
                                 href={i.href}
                                 isDocs={isDocs}
                                 />
-                            : <p key={i.id} className="accordioDropdown-paragraf__item">{i.text}</p>
+                            : <p key={i.id} className="accordion-dropdown-paragraph__item">{i.text}</p>
                       )
                   })
                }
@@ -28,9 +27,10 @@ function Accordion({dataConst, isList, isDocs}) {
          )
     })
 
+
     return (
         <div className="accordion">
-            <div className="accordion__body _container">
+            <div className="accordion__body _content">
                 <ul className="accordion-list">
                     {list}
                 </ul>
