@@ -1,0 +1,20 @@
+.search-result {
+
+  &__body {
+    width: 100%;
+  }
+  &__title {
+    margin-top: 250px;
+    &_text {
+      font-family: 'FuturaPT';
+      font-weight: 700;
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+  &__content {}
+}
+
+.search-list {
+
+}

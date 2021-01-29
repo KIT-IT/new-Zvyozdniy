@@ -17,6 +17,7 @@ import ClubsList from './pages/Clubs/ClubsList/ClubsList';
 import {circusClubs, earlyDevelopmentClubs, artClubs, vocalClubs, danceClubs, theatreClubs, longevityClubs} from './configurations/clubsPageConfigurations/clubsListsConfig'
 import Festivals from './pages/Festivals/Festivals';
 import Services from "./pages/Services/Services";
+import SearchingResult from "./pages/SearchingResult/SearchingResult";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
             <Route path="/contacts" component={Contacts} />
             <Route path="/libraries" exact component={Libraries} />
             <Route path="/festivals" component={Festivals} />
-
+            <Route path="/search" component={SearchingResult} />
 
             <Route path="/libraries/pahra-library">
               <LibrariesItem

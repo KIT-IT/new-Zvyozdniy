@@ -9,11 +9,12 @@
  }
  
  .about-switch-panel-list {
+   font-family: 'FuturaPT';
+   font-weight: 700;
    display: flex;
    justify-content: space-around;
    align-items: center;
    list-style: none;
-   font-family: 'FuturaPT-bold';
    @media (max-width: 600px) {
      display: block;
    }

@@ -1,12 +1,13 @@
-import React, { useState,useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import HeaderMediaSection from './HeaderMediaSection/HeaderMediaSection'
 import zvzLogo from '../../assets/images/logo.png'
 import {Link} from "react-router-dom";
 import Navigation from "./Navigation/Navigation";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faAngleUp, faGlasses } from '@fortawesome/free-solid-svg-icons'
+import { faAngleUp, faGlasses } from '@fortawesome/free-solid-svg-icons'
 import VisualImpairedSection from './VisualImpairedSection/VisualImpairedSection'
 import Form from "../Form/Form";
+import SearchingInput from "../SearchingInput/SearchingInput";
 
 
 function Header() {
@@ -104,10 +105,9 @@ function Header() {
                                         <img className="header-info-logo__img" src={zvzLogo} alt="logo-zvz"/>
                                     </Link>
                                 </div>
-                                <div className="header-info-search">
-                                    <FontAwesomeIcon className="header-info-search__img icon element-with-changing-styles" icon={faSearch}  color={'#fff'}/>
-                                    <input type="text" className="header-info-search__input input element-with-changing-styles" placeholder="Поиск по сайту"/>
-                                </div>
+
+                                <SearchingInput />
+
                                 <div className="header-info-contacts">
                                     <div className="info-glasses" onClick={handleImpaired}>
                                         <FontAwesomeIcon className="element-with-changing-styles"  icon={faGlasses} color={'#fff'} style={{fontSize: '15px'}}/>

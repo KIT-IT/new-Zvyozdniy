@@ -3,14 +3,54 @@
 }
 
 .main-preview {
-  height: 600px;
+  height: 100vh;
   max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-image: url("../../assets/images/backgroundImages/mainBackround.jpeg");
-  &__background {}
+  &__body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 30%;
+    left: 15%;
+    @media (max-width: 550px) {
+      width: 100%;
+      left: 0;
+      padding: 0 20px;
+    }
+    @media (max-height: 400px) {
+      top: 25%;
+    }
+  }
+  &__title {
+    &_text {
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      @media (max-width: $md2 + 'px') {
+        font-size: 40px;
+      }
+      @media (max-width: 370px) {
+        font-size: 30px;
+      }
+      @media (max-height: 400px) {
+        font-size: 25px;
+      }
+    }
+  }
+  &__slider {
+    height: 100%;
+    &_body {
+
+    }
+  }
 }
 
 .main-content {
@@ -198,6 +238,10 @@
   height: 100%;
   padding: 0 10px;
   margin-right: -10px;
+  @media (max-width: 760px) {
+    padding: 0;
+    margin-right: 0;
+  }
   &__body {
     background: #f6f6f6;
     padding: 20px;
@@ -231,6 +275,8 @@
   }
 
   .moscow-event {
+    font-family: 'FuturaPT';
+    font-weight: 300;
     margin: 10px 0;
     @media (max-width: 1020px) {
       margin: 20px 0;
@@ -255,7 +301,6 @@
       }
       &_text {
         font-size: 20px;
-        font-weight: bold;
       }
       &_icon {
         color: black;
@@ -286,6 +331,7 @@
     }
     &__description {
       padding-right: 10px;
+
       @media (max-width: 1020px) {
         padding-right: 20px;
       }
@@ -389,6 +435,142 @@
   &__description {
     color: #505050;
   }
+}
+
+.association {
+  background: #f06060;
+  color: #fff;
+  &__body {
+    width: 50%;
+    @media (max-width: $md2 + 'px') {
+      width: 80%;
+    }
+    @media (max-width: 650px) {
+      width: 100%;
+
+    }
+  }
+  &__content {}
+  &__title {
+    &_text {
+      font-size: 25px;
+    }
+  }
+  &__info {
+    font-family: 'FuturaPT';
+    font-weight: 300;
+    padding-top: 10px;
+  }
+  &__info-title {}
+  &__info-list {
+    padding: 20px 0 20px 20px;
+    @media (max-width: 650px) {
+      padding: 20px 0;
+    }
+    &_item {}
+  }
+  &__description {}
+}
+
+
+
+
+.ho-we-are {
+  &__body {}
+  &__title {
+    &_text {
+      font-size: 30px;
+    }
+  }
+  &__content {
+    width: 100%;
+    &_body {}
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    &_item {
+      flex: 0 0 33.333%;
+      padding: 20px 20px;
+    }
+  }
+}
+
+.ho-we-are-item {
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  position: relative;
+  max-width: 100%;
+  &__body {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    min-height: 100%;
+    &_title {
+      font-family: 'FuturaPT';
+      font-weight: 700;
+      font-size: 40px;
+      color: white;
+      text-shadow: 1px 1px 1px #000;
+    }
+    &_text {
+      display: inline;
+      font-family: 'FuturaPT';
+      font-weight: 300;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      color: white;
+      padding: 0 20px;
+      z-index: 20;
+      p {
+        text-align: center;
+      }
+    }
+  }
+  &__numbers {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    span {
+      font-weight: bold;
+      color: white;
+      opacity: .5;
+      //z-index: 2;
+    }
+  }
+  &__hover-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #4054b2;
+      opacity: 0;
+      transition:  0.5s ease;
+      &:hover {
+        opacity: .7;
+        box-shadow: inset 0 0 0 0 #1e1e1e;
+      }
+  }
+}
+
+.number1 {
+  font-size: 230px;
+}
+
+.number2 {
+  font-size: 300px;
 }
 
 

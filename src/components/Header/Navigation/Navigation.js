@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {navList} from "../../../configurations/navigationLInksConfigurations/navLinkConfig"
+import React, { useState, useEffect } from 'react';
+import { navList } from "../../../configurations/navigationLInksConfigurations/navLinkConfig"
 import Dropdown from "./NavigationList/Dropdown/Dropdown"
 import NavigationList from "./NavigationList/NavigationList"
 import MobileNavigation from './MobileNavigation/MobileNavigation'
@@ -8,13 +8,19 @@ function Navigation({navigationClass, handleFormOpen}) {
     const [mobile, setMobile] = useState(false)
     const [click, setClick] = useState(false)
     const input  = document.querySelector('#checkbox')
+    const [isClicked, setIsClicked] = useState(true)
+
 
     const handleClick = () => {
         setClick(!click)
+        setIsClicked(false)
         if (mobile) {
             input.checked = false
         }
     }
+
+
+
 
     const handleMobileMenu = () => {
         if (window.innerWidth <= 900) {
@@ -29,6 +35,7 @@ function Navigation({navigationClass, handleFormOpen}) {
         handleMobileMenu()
         return () => {
             window.removeEventListener('resize', handleMobileMenu)
+            console.log('woo')
         }
     }, [])
 
@@ -41,6 +48,7 @@ function Navigation({navigationClass, handleFormOpen}) {
                 isIcon={item.isIcon}
                 isDrop={item.isDrop}
                 handleClick={handleClick}
+                isClicked={isClicked}
                 dropdown={
                     item.drop.map(i => {
                         return (

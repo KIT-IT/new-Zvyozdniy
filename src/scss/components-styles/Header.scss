@@ -5,9 +5,7 @@
   left: 0;
   z-index: 100;
   background: #fff;
-  //background: rgba(0,0,0,.5);
   box-shadow: 0 0 0 1px rgba(128,128,128,.5);
-  //transition: 0.2s ease-in-out;
 }
 
 .fixed-navigation div {
@@ -74,6 +72,8 @@
   }
   &__input {
     border-bottom: 2px solid #fff;
+    color: white;
+    font-size: 15px;
   }
 }
 

@@ -4,8 +4,6 @@
     top: 0;
     left: 0;
     width: 100%;
-
-    ////
     background: white;
     color: #3b3b3b;
     font-size: 14px;
@@ -26,9 +24,6 @@
     align-items: center;
     padding: 5px 0;
     width: 50%;
-    //@media (max-width: $md3+px) {
-    //    width: 100%;
-    //}
 }
 
 .default-panel-styles button {
@@ -38,9 +33,6 @@
     padding: 0 5px;
     border-radius: 8px;
     background: none;
-    //@media (max-width: $md2+px) {
-    //    margin-left: 5px;
-    //}
 }
 
 .visual-impaired-switch-panel {
@@ -71,9 +63,6 @@
 .font-size-panel-icon {
     margin-left: 10px;
     cursor: pointer;
-    //@media (max-width: $md2+px) {
-    //    margin-left: 5px;
-    // }
 }
 
 .images-switch-panel {
@@ -106,10 +95,6 @@
     cursor: pointer;
     border: 1px solid black;
     border-radius: 50%;
-    //@media (max-width: $md2+px) {
-    //    margin-left: 5px;
-    //    padding: 2px 3px;
-    // }
     &:nth-child(1) {
         background-color: white;
         color: black;

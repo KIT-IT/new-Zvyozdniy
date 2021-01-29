@@ -26,6 +26,8 @@
 }
 
 .club-registration-block {
+    font-family: 'FuturaPT';
+    font-weight: 300;
     margin-top: 40px;
     background: #f6f6f6;
     border-bottom: 1px solid rgba(128, 128, 128, 0.5);
@@ -87,9 +89,9 @@
     &__body {}
     &__title {
         &_text {
+            font-family: 'FuturaPT';
+            font-weight: 500;
             font-size: 30px;
-            font-family: 'FuturaPT-regular';
-            font-weight: bold;
             padding-bottom: 10px;
         }
     }
@@ -114,17 +116,17 @@
     }
     &__club {
         &_text {
+            font-family: 'FuturaPT';
+            font-weight: 500;
             font-size: 30px;
-            font-family: 'FuturaPT-regular';
-            font-weight: bold;
             padding-bottom: 10px;
         }
     }
     &__group {
         &_text {
+            font-family: 'FuturaPT';
+            font-weight: 500;
             font-size: 30px;
-            font-family: 'FuturaPT-regular';
-            font-weight: bold;
             padding-bottom: 10px;
         }
     }
@@ -243,9 +245,9 @@
         display: flex;
         flex-direction: column;
         &_title {
+            font-family: 'FuturaPT';
+            font-weight: 500;
             font-size: 30px;
-            font-family: 'FuturaPT-regular';
-            font-weight: bold;
         }
         &_name {
             font-size: 25px;

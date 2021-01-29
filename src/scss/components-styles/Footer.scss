@@ -27,9 +27,9 @@
       padding: 5px 0;
       align-self: center;
       &_link {
+        font-family: 'FuturaPT';
+        font-weight: 300;
         color: rgba(255,255,255,.5);
-        font-family: 'FuturaPT-light';
-        font-weight: 200;
         &:hover {
           color: #fff;
           border-bottom: 1px solid #fff;
@@ -43,7 +43,8 @@
     }
   }
   &__item-title {
-    font-family: 'FuturaPT-bold';
+    font-family: 'FuturaPT';
+    font-weight: 700;
     margin-bottom: 10px;
     &_text {
       color: #fff;
