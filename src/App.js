@@ -18,25 +18,31 @@ import {circusClubs, earlyDevelopmentClubs, artClubs, vocalClubs, danceClubs, th
 import Festivals from './pages/Festivals/Festivals';
 import Services from "./pages/Services/Services";
 import SearchingResult from "./pages/SearchingResult/SearchingResult";
+import ScrollToTop from "./utils/ScrollToTop";
+import NoMatch from "./pages/404/NoMatch";
+import {SearchProvider} from "./context/inputSearchContext";
 
 
 function App() {
     return (
+        <SearchProvider>
     <Router>
+        <ScrollToTop />
         <Header/>
         <Switch>
             <Route path="/" exact component={Main}/>
-            <Route path="/services" component={Services}/>
-            <Route path="/about" component={About} />
-            <Route path="/personal" component={Personal} />
-            <Route path="/documents" component={Documents} />
-            <Route path="/questions" component={Questions} />
-            <Route path="/contacts" component={Contacts} />
-            <Route path="/libraries" exact component={Libraries} />
-            <Route path="/festivals" component={Festivals} />
-            <Route path="/search" component={SearchingResult} />
+            <Route path="/services/" component={Services}/>
+            <Route path="/about/" component={About} />
+            <Route path="/personal/" component={Personal} />
+            <Route path="/documents/" component={Documents} />
+            <Route path="/questions/" component={Questions} />
+            <Route path="/contacts/" component={Contacts} />
+            <Route path="/libraries/" exact component={Libraries} />
+            <Route path="/festivals/" component={Festivals} />
+            <Route path="/search/" component={SearchingResult} />
 
-            <Route path="/libraries/pahra-library">
+
+            <Route path="/libraries/pahra-library/">
               <LibrariesItem
                 title={pahraLibrary.title}
                 subtitle={pahraLibrary.subtitle}
@@ -52,7 +58,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/libraries/pahra-kids-library">
+            <Route path="/libraries/pahra-kids-library/">
               <LibrariesItem
                 title={pahraKidsLibrary.title}
                 subtitle={pahraKidsLibrary.subtitle}
@@ -68,7 +74,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/libraries/bilovo-library">
+            <Route path="/libraries/bilovo-library/">
               <LibrariesItem
                 title={bilovoLibrary.title}
                 subtitle={bilovoLibrary.subtitle}
@@ -84,7 +90,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/libraries/minzag-library">
+            <Route path="/libraries/minzag-library/">
               <LibrariesItem
                 title={minzagLibrary.title}
                 subtitle={minzagLibrary.subtitle}
@@ -100,26 +106,29 @@ function App() {
               />
             </Route>
 
-            <Route path="/events"><Events month="Октябрь"/></Route>
-            <Route path="/clubs" exact component={Clubs}/>
+            <Route path="/events/"><Events month="Февраль"/></Route>
+            <Route path="/clubs/" exact component={Clubs}/>
 
-            <Route path="/clubs/early-development"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
+            <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
             
-            <Route path="/clubs/circus"><ClubsList clubsList={circusClubs} title={"Направления оригинального жанра"} abbreviated={"Оригинальный жанр"}/></Route>
+            <Route path="/clubs/circus/"><ClubsList clubsList={circusClubs} title={"Направления оригинального жанра"} abbreviated={"Оригинальный жанр"}/></Route>
 
-            <Route path="/clubs/art"><ClubsList clubsList={artClubs} title={"Декоративно-прикладное и изобразительное искусство"} abbreviated={"Арт"}/></Route>
+            <Route path="/clubs/art/"><ClubsList clubsList={artClubs} title={"Декоративно-прикладное и изобразительное искусство"} abbreviated={"Арт"}/></Route>
 
-            <Route path="/clubs/music"><ClubsList clubsList={vocalClubs} title={"Вокальное искусство и музыкальное развитие"} abbreviated={"Музыка"}/></Route>
+            <Route path="/clubs/music/"><ClubsList clubsList={vocalClubs} title={"Вокальное искусство и музыкальное развитие"} abbreviated={"Музыка"}/></Route>
 
-            <Route path="/clubs/dance"><ClubsList clubsList={danceClubs} title={"Танцевально-спортивное направление"} abbreviated={"Танцы"}/></Route>
+            <Route path="/clubs/dance/"><ClubsList clubsList={danceClubs} title={"Танцевально-спортивное направление"} abbreviated={"Танцы"}/></Route>
 
-            <Route path="/clubs/theatre"><ClubsList clubsList={theatreClubs} title={"Театральное искусство"} abbreviated={"Театр"}/></Route>
+            <Route path="/clubs/theatre/"><ClubsList clubsList={theatreClubs} title={"Театральное искусство"} abbreviated={"Театр"}/></Route>
 
-            <Route path="/clubs/moscow-longevity"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
+            <Route path="/clubs/moscow-longevity/"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
 
+
+            <Route path="*" component={NoMatch} />
         </Switch>
         <Footer />
     </Router>
+        </SearchProvider>
   );
 }
 

@@ -23,7 +23,7 @@ function Events({month}) {
     })
 
     const [currentPage, setCurrentPage] = useState(1)
-    const [postsPerPage] = useState(10)
+    const [postsPerPage] = useState(5)
     const indexOfLastPost = currentPage * postsPerPage
     const indexOfFirstPost = indexOfLastPost - postsPerPage
     const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost)
@@ -49,7 +49,7 @@ function Events({month}) {
                         <h2 className="events__month_title _subtitle">{month}</h2>
                     </div>
                     <div className="events-content">
-                        <ul className="events-list _content">
+                        <ul className="events-list">
                             {currentPosts}
                         </ul>
                     </div>

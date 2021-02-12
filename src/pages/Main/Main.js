@@ -6,14 +6,13 @@ import InfoAboutAssociation from "./InfoAboutAssociation/InfoAboutAssociation";
 import HoWeAre from "./HoWeAre/HoWeAre";
 
 function Main() {
-
     return (
         <div className="main wrapper">
            <div className="main-preview">
                <div className="main-preview__body">
                    <div className="main-preview__content">
                        <div className="main-preview__title">
-                           <p className="main-preview__title_text _title">Дом Культуры Звёздный</p>
+                           <p className="main-preview__title_text _title">Дом культуры "Звёздный"</p>
                        </div>
                        <div className="main-preview__slider">
                            <div className="main-preview__slider_body">

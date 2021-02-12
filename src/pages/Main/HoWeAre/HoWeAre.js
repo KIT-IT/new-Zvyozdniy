@@ -21,7 +21,7 @@ function HoWeAre() {
         <div className="ho-we-are _block">
             <div className="ho-we-are__body _container">
                 <div className="ho-we-are__title">
-                    <p className="ho-we-are__title_text">Наши главные приимущества</p>
+                    <p className="ho-we-are__title_text _subtitle">Наши главные преимущества</p>
                 </div>
                 <div className="ho-we-are__content">
                     <div className="ho-we-are__content_body">

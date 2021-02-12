@@ -2,29 +2,29 @@ export const navList  = [
     {
         type: 'about',
         id: 1,
-        to: '/about',
+        to: '/about/',
         text: 'О Нас',
         isIcon: true,
         isDrop: true,
         drop: [
             {
                 id: 1,
-                to: '/personal',
+                to: '/personal/',
                 text: 'Наша Команда'
             },
             {
                 id: 2,
-                to: '/documents',
+                to: '/documents/',
                 text: 'Правовая Информация'
             },
             {
                 id: 3,
-                to: '/contacts',
+                to: '/contacts/',
                 text: 'Контакты'
             },
             {
                 id: 4,
-                to: '/questions',
+                to: '/questions/',
                 text: 'Часто Задоваемые Вопросы'
             }
         ]
@@ -32,29 +32,29 @@ export const navList  = [
     {
         type: 'libraries',
         id: 2,
-        to: '/libraries',
+        to: '/libraries/',
         text: 'Библиотеки',
         isIcon: true,
         isDrop: true,
         drop: [
             {
                 id: 6,
-                to: '/libraries/pahra-library',
+                to: '/libraries/pahra-library/',
                 text: 'Красная Пахра'
             },
             {
                 id: 7,
-                to: '/libraries/pahra-kids-library',
+                to: '/libraries/pahra-kids-library/',
                 text: 'Красная Пахра Детская'
             },
             {
                 id: 8,
-                to: '/libraries/bilovo-library',
+                to: '/libraries/bilovo-library/',
                 text: 'Былово'
             },
             {
                 id: 9,
-                to: '/libraries/minzag-library',
+                to: '/libraries/minzag-library/',
                 text: 'Минзаг'
             }
         ]
@@ -62,7 +62,7 @@ export const navList  = [
     {
         type: 'events',
         id: 3,
-        to: '/events',
+        to: '/events/1',
         text: 'События',
         isIcon: false,
         isDrop: false,
@@ -71,44 +71,44 @@ export const navList  = [
     {
         type: 'clubs',
         id: 4,
-        to: '/clubs',
+        to: '/clubs/',
         text: 'Клубные Формирования',
         isIcon: true,
         isDrop: true,
         drop: [
             {
                 id: 10,
-                to: '/clubs/dance',
+                to: '/clubs/dance/',
                 text: 'Танцы'
             },
             {
                 id: 11,
-                to: '/clubs/art',
+                to: '/clubs/art/',
                 text: 'Арт'
             },
             {
                 id: 12,
-                to: '/clubs/music',
+                to: '/clubs/music/',
                 text: 'Музыка'
             },
             {
                 id: 13,
-                to: '/clubs/theatre',
+                to: '/clubs/theatre/',
                 text: 'Театр'
             },
             {
                 id: 14,
-                to: '/clubs/circus',
+                to: '/clubs/circus/',
                 text: 'Оригинальный Жанр'
             },
             {
                 id: 15,
-                to: '/clubs/early-development',
+                to: '/clubs/early-development/',
                 text: 'Раннее Развитие'
             },
             {
                 id: 16,
-                to: '/clubs/moscow-longevity',
+                to: '/clubs/moscow-longevity/',
                 text: 'Московское Долголетие'
             }
         ]
@@ -116,7 +116,7 @@ export const navList  = [
     {
         type: 'services',
         id: 5,
-        to: '/services',
+        to: '/',
         text: 'Услуги',
         isIcon: true,
         isDrop: true,
@@ -141,7 +141,7 @@ export const navList  = [
     {
         type: 'festivals',
         id: 6,
-        to: '/festivals',
+        to: '/festivals/',
         text: 'Фестивали',
         isIcon: false,
         isDrop: false,

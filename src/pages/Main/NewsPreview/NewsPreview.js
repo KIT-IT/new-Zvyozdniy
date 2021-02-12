@@ -1,7 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faInstagram, faVk} from "@fortawesome/free-brands-svg-icons";
-import {Link} from "react-router-dom";
 import {moscowEvents, newsList} from "../../../configurations/mainPageConfigurations/newsListConfig";
 import NewsPreviewListItem from "./NewsPreviewListItem/NewsPreviewList";
 import MoscowEventsList from "./MoscowEventsList/MoscowEventsList";
@@ -42,14 +41,14 @@ function NewsPreview() {
                         <p className="news-preview-header__title_text _subtitle">Новости</p>
                     </div>
                     <div className="news-preview-header__links">
-                        <Link to="/" className="news-preview-header__links_item news-preview-link">
+                        <a href="https://www.instagram.com/dk_zvyozdniy/" className="news-preview-header__links_item news-preview-link" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} className="news-preview-link__icon"/>
                             <p className="news-preview-link__text">Узнавайте первыми в Instagram</p>
-                        </Link>
-                        <Link to="/" className="news-preview-header__links_item news-preview-link">
+                        </a>
+                        <a href="https://vk.com/dk_zvyozdniy" className="news-preview-header__links_item news-preview-link" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faVk} className="news-preview-link__icon"/>
                             <p className="news-preview-link__text">Присоединяйтесь к группе в ВКонтакте</p>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className="news-preview-content _content">

@@ -15,51 +15,51 @@ function Footer() {
                     <div className="footer-nav">
                         <ul className="footer-nav__list first">
                             <li className="footer-nav__item-title">
-                                <Link className="footer-nav__item-title_text" to='/about'>О Нас</Link>
+                                <Link className="footer-nav__item-title_text" to='/about/'>О Нас</Link>
                             </li>
                             <li className="footer-nav__item">
                                 <a className="footer-nav__item_link" target="_blank" rel="noopener noreferrer" href="https://organizations.kultura.mos.ru/organizations/5074030440.html">Независимая Оценка</a>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/documents">Правовая Информация</Link>
+                                <Link className="footer-nav__item_link" to="/documents/">Правовая Информация</Link>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/documents">Ответы на часто задаваемые вопросы</Link>
+                                <Link className="footer-nav__item_link" to="/questions/">Ответы на часто задаваемые вопросы</Link>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/documents">Вакансии</Link>
+                                <Link className="footer-nav__item_link" to="/">Вакансии</Link>
                             </li>
                         </ul>
                         <ul className="footer-nav__list second">
                             <li className="footer-nav__item-title">
-                                <Link className="footer-nav__item-title_text" to='/'>Библиотеки</Link>
+                                <Link className="footer-nav__item-title_text" to='/libraries/'>Библиотеки</Link>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/">Красная Пахра</Link>
+                                <Link className="footer-nav__item_link" to="/libraries/pahra-library/">Красная Пахра</Link>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/vacancies">Красная Пахра Детская</Link>
+                                <Link className="footer-nav__item_link" to="/libraries/pahra-kids-library/">Красная Пахра Детская</Link>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/questions">Былово</Link>
+                                <Link className="footer-nav__item_link" to="/libraries/bilovo-library/">Былово</Link>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/questions">Минзаг</Link>
+                                <Link className="footer-nav__item_link" to="/libraries/minzag-library/">Минзаг</Link>
                             </li>
                         </ul>
                         <ul className="footer-nav__list second">
                             <li className="footer-nav__item-title">
-                                <Link className="footer-nav__item-title_text" to='/'>Контакты</Link>
+                                <Link className="footer-nav__item-title_text" to='/contacts/'>Контакты</Link>
                             </li>
                             <li className="footer-nav__item">
                                 <a className="footer-nav__item_link" href="tel:+74958508053">+7 (495) 850-80-53</a>
                             </li>
                             <li className="footer-nav__item">
                                 <p className="footer-nav__item_link">108828 г.Москва, п.Краснопахорское, с.Красная Пахра, ул.Заводская, д.20</p>
-                                <a className="footer-nav__item_link" href="mailto:zvyozdniy@mail.ru">zvyozdniy@mail.ru</a>
+                                <a className="footer-nav__item_link" href="mailto:zvezdnii45@list.ru">zvezdnii45@list.ru</a>
                             </li>
                             <li className="footer-nav__item">
-                                <Link className="footer-nav__item_link" to="/questions">Все контакты</Link>
+                                <Link className="footer-nav__item_link" to="/contacts/">Все контакты</Link>
                             </li>
                         </ul>
                     </div>

@@ -6,58 +6,58 @@ export const documentsData = [
         drop: [
             {
                 id: 1,
-                href: require('../../assets/docs/doc.pdf'),
-                text: 'Создание учреждения и назначение директора'
+                href: require('../../assets/docs/uchreditelnie/директор-назначение.pdf'),
+                text: 'Назначение директора'
             },
             {
                 id: 2,
-                href: '/',
-                text: 'Устав'
+                href: require('../../assets/docs/uchreditelnie/создание.pdf'),
+                text: 'Постановление о создании муниципального учреждения'
             },
             {
                 id: 3,
-                href: '/',
-                text: 'Свидетельство ФНС учёт'
+                href: require('../../assets/docs/uchreditelnie/устав.pdf'),
+                text: 'Устав'
             },
             {
                 id: 4,
-                href: '/',
+                href: require('../../assets/docs/uchreditelnie/ЕГРЮЛ.pdf'),
                 text: 'ЕГРЮЛ'
             },
             {
                 id: 5,
-                href: '/',
+                href: require('../../assets/docs/uchreditelnie/регистрация-права.pdf'),
                 text: 'Регистрация права'
             },
             {
                 id: 6,
-                href: '/',
+                href: require('../../assets/docs/uchreditelnie/ОГРН.pdf'),
                 text: 'Учет в налоговой'
             },
             {
                 id: 7,
-                href: '/',
+                href: require('../../assets/docs/uchreditelnie/закрепление-имущества.pdf'),
                 text: 'Постановление о закреплении имущества'
             },
             {
                 id: 8,
-                href: '/',
-                text: 'Акт приема -передачи имущества'
+                href: require('../../assets/docs/uchreditelnie/акт-приёма-имущества.pdf'),
+                text: 'Акт приема - передачи имущества'
             },
             {
                 id: 9,
-                href: '/',
-                text: 'Распоряжение об изменении адреса'
-            },
-            {
-                id: 10,
-                href: '/',
+                href: require('../../assets/docs/uchreditelnie/Кадастр.pdf'),
                 text: 'Выписка ЕГРН'
             },
             {
-                id: 11,
-                href: '/',
+                id: 10,
+                href: require('../../assets/docs/uchreditelnie/договор-имущества.pdf'),
                 text: 'Договор о закреплении муниципального недвижимого имущества'
+            },
+            {
+                id: 11,
+                href: require('../../assets/docs/uchreditelnie/изменение-адреса.pdf'),
+                text: 'Распоряжение об изменении адреса'
             }
         ]
     },
@@ -68,62 +68,57 @@ export const documentsData = [
         drop: [
             {
                 id: 1,
-                href: '/',
+                href: require('../../assets/docs/lokalnie/эффективный-контракт.pdf'),
                 text: 'Эффективный Контракт'
             },
             {
                 id: 2,
-                href: '/',
+                href: require('../../assets/docs/lokalnie/перечень-услуг-работ.pdf'),
                 text: 'Перечень и виды муниципальных услуг и работ'
             },
             {
                 id: 3,
-                href: '/',
-                text: 'План мероприятий по улучшению качества работы'
-            },
-            {
-                id: 4,
-                href: '/',
+                href: require('../../assets/docs/lokalnie/положение-оплаты-труда.pdf'),
                 text: 'Положение  об оплате труда'
             },
             {
-                id: 5,
-                href: '/',
-                text: 'Муниципальное задание на выполнение работ'
-            },
-            {
-                id: 6,
-                href: '/',
-                text: 'Муниципальное задание на оказание услуг'
-            },
-            {
-                id: 7,
-                href: '/',
+                id: 4,
+                href: require('../../assets/docs/lokalnie/положение-платные-услуги.pdf'),
                 text: 'Положение о платных услугах'
             },
             {
-                id: 8,
-                href: '/',
+                id: 5,
+                href: require('../../assets/docs/lokalnie/тарифы-льготы.pdf'),
                 text: 'Тарифы и льготы на платные услуги'
             },
             {
-                id: 9,
-                href: '/',
+                id: 6,
+                href: require('../../assets/docs/lokalnie/договор-бюджет-взрослые.pdf'),
                 text: 'Договор об оказании платных услуг взрослые'
             },
             {
-                id: 10,
-                href: '/',
+                id: 7,
+                href: require('../../assets/docs/lokalnie/договор-бюджет-дети.pdf'),
                 text: 'Договор об оказании платных услуг дети'
             },
             {
-                id: 11,
-                href: '/',
+                id: 8,
+                href: require('../../assets/docs/lokalnie/договор-внебюджет-взрослые.pdf'),
+                text: 'Договор об оказании бесплатных услуг взрослые'
+            },
+            {
+                id: 9,
+                href: require('../../assets/docs/lokalnie/договор-внебюджет-дети.pdf'),
+                text: 'Договор об оказании бесплатных услуг дети'
+            },
+            {
+                id: 10,
+                href: require('../../assets/docs/lokalnie/квитанция-оплаты.pdf'),
                 text: 'Квитанция для оплаты услуг'
             },
             {
-                id: 12,
-                href: '/',
+                id: 11,
+                href: require('../../assets/docs/lokalnie/кодекс-этики.pdf'),
                 text: 'Кодекс этики'
             }
         ]
@@ -135,70 +130,60 @@ export const documentsData = [
         drop: [
             {
                 id: 1,
-                href: '/',
-                text: 'План финансово-хозяйственной деятельности на 2020 год'
+                href: require('../../assets/docs/pfhd/ПФХД-2021.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2021 год'
             },
             {
                 id: 2,
-                href: '/',
-                text: 'План финансово-хозяйственной деятельности на 2019 год'
+                href: require('../../assets/docs/pfhd/ПФХД-2020.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2020 год'
             },
             {
                 id: 3,
-                href: '/',
-                text: 'План финансово-хозяйственной деятельности на 2018 год'
+                href: require('../../assets/docs/pfhd/ПФХД-2019.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2019 год'
             },
             {
                 id: 4,
-                href: '/',
-                text: 'План финансово-хозяйственной деятельности на 2017 год'
+                href: require('../../assets/docs/pfhd/ПФХД-2018.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2018 год'
             },
             {
                 id: 5,
-                href: '/',
-                text: 'План финансово-хозяйственной деятельности на 2016 год'
+                href: require('../../assets/docs/pfhd/ПФХД-2017.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2017 год'
             }
         ]
     },
     {
         id: 4,
-        text: 'Отчёты',
+        text: 'Муниципальное Задание',
         isDrop: true,
         drop: [
             {
                 id: 1,
-                href: '/',
+                href: require('../../assets/docs/municipal/МЗ-2019.pdf'),
                 text: 'Муниципальное задание на 2019 год'
             },
             {
                 id: 2,
-                href: '/',
-                text: 'Отчет о выполнении муниципального задания за I полугодие 2018 года'
-            },
-            {
-                id: 3,
-                href: '/',
+                href: require('../../assets/docs/municipal/МЗ-2018-выполнение-работ.pdf'),
                 text: 'Муниципальное задание на выполнение работ за 2018 год'
             },
             {
-                id: 4,
-                href: '/',
+                id: 3,
+                href: require('../../assets/docs/municipal/МЗ-2018-оказание-услуг.pdf'),
                 text: 'Муниципальное задание на оказание услуг за 2018 год'
             },
             {
-                id: 5,
-                href: '/',
+                id: 4,
+                href: require('../../assets/docs/municipal/МЗ-2017-выполнение-работ.pdf'),
                 text: 'Муниципальное задание на выполнение работ за 2017 год'
             },
             {
-                id: 6,
-                href: '/',
+                id: 5,
+                href: require('../../assets/docs/municipal/МЗ-2017-оказание-услуг.pdf'),
                 text: 'Муниципальное задание на оказание услуг за 2017 год'
-            },
-            {
-                id: 7,
-                href: '/',
-                text: 'Муниципальное задание на 2016 год'
             }
         ]
     },
@@ -209,7 +194,7 @@ export const documentsData = [
         drop: [
             {
                 id: 1,
-                href: '/',
+                href: require('../../assets/docs/lokalnie/виды-деятельности.pdf'),
                 text: 'Виды деятельности'
             }
         ]
@@ -221,7 +206,7 @@ export const documentsData = [
         drop: [
             {
                 id: 1,
-                href: '/',
+                href: require('../../assets/docs/карточка-клиента.pdf'),
                 text: 'Карточка клиента'
             }
         ]

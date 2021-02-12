@@ -76,7 +76,7 @@ export const contactsSwitchListConfig = [
 
     {
         key: 3,
-        name: 'ДК Юбелийный',
+        name: 'ДК Юбилейный',
         fun: <ContactsItem title={bilovoCultureCenter.title} srcToMap={bilovoCultureCenter.srcToMap} address={bilovoCultureCenter.address} worktime={bilovoCultureCenter.worktime} phone={bilovoCultureCenter.phone}/>
     },
     {

@@ -2,13 +2,15 @@ import React, {useState} from 'react'
 import AboutContentComponent from './AboutContentComponent'
 import {aboutContentConfig} from '../../configurations/aboutPageConfigurations/aboutContentConfig'
 import PagePreview from "../../components/PagePrewievImageNavigation/PagePreview";
+import img from "../../assets/images/aboutContentImg.jpg";
+
 
 function About() {
     const [activeIndex, setActiveIndex] = useState(1);
 
-    const [component, setComponent] = useState(<AboutContentComponent heading={aboutContentConfig.about.heading} text={aboutContentConfig.about.text} src={aboutContentConfig.about.src}/>)
+    const [component, setComponent] = useState(<AboutContentComponent heading={aboutContentConfig.about.heading} text={aboutContentConfig.about.text} src={img}/>)
     function handleFirstCompopnent() {
-        setComponent(<AboutContentComponent heading={aboutContentConfig.about.heading} text={aboutContentConfig.about.text} src={aboutContentConfig.about.src}/>)
+        setComponent(<AboutContentComponent heading={aboutContentConfig.about.heading} text={aboutContentConfig.about.text} src={img}/>)
         setActiveIndex(1)
     }
 

@@ -1,38 +1,32 @@
 export const personalData = [
     {
         id: 1,
-        src: '',
+        src: require('../../assets/images/pesonalPhoto/nadejda-matveeva.jpg'),
         name: 'Матвеева Надежда Владимировна',
         position: 'Директор'
     },
     {
         id: 2,
-        src: '',
+        src: require('../../assets/images/pesonalPhoto/kate-goremikina.png'),
         name: 'Горемыкина Екатерина Евгеньевна',
-        position: 'Заместитель Директора'
+        position: 'Заместитель директора'
     },
     {
         id: 3,
-        src: require('../../assets/images/pesonalPhoto/helena.JPG'),
-        name: 'Мирошниченко Елена Сергеевна',
-        position: 'Начальник Отдела Клубных Формирований'
+        src: require('../../assets/images/pesonalPhoto/lena-mihailina.jpg'),
+        name: 'Михайлина Елена Дмитриевна',
+        position: 'Заведующая отдела по культурно-досуговой деятельности'
     },
     {
         id: 4,
-        src: '',
-        name: 'Михайлина Елена Дмитриевна',
-        position: 'Художественный руководитель'
+        src: require('../../assets/images/pesonalPhoto/helena.JPG'),
+        name: 'Мирошниченко Елена Сергеевна',
+        position: 'Заведующая отдела по работе клубных формирований'
     },
     {
         id: 5,
-        src: '',
-        name: 'Рышняну Ктото Там',
-        position: 'Главный Бухгалтер'
-    },
-    {
-        id: 6,
-        src: require('../../assets/images/pesonalPhoto/semen.jpeg'),
-        name: 'Мирошниченко Семен Тимурович',
-        position: 'Автор Сайта'
+        src: require('../../assets/images/pesonalPhoto/lyudmila-abramova.jpg'),
+        name: 'Абрамова Людмила Александровна',
+        position: 'Заведующая библиотечного отдела'
     }
 ]

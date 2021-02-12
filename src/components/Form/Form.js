@@ -1,25 +1,35 @@
 import React, {useState} from 'react';
+import emailjs from 'emailjs-com';
 
-function Form({title, handleFormClose, isPopup}) {
-    const [form, setForm] = useState({
-        name: '',
-        email: '',
-        message: '',
-    })
+function Form({title, handleFormClose, isPopup, setForm}) {
+    const [userAnswer, setUserAnswer] = useState('')
+
 
     const sendEmail = e => {
-        e.preventDefault()
-        console.log('Send')
+        e.preventDefault();
+
+        emailjs.sendForm('service_nuty03k', 'template_z8jhxzr', e.target, 'user_bqAO18VFx1zRj91J7Pi4f')
+            .then((result) => {
+                console.log(result.text);
+                setUserAnswer('Ваше сообщение было успешно отправленно!')
+            }, (error) => {
+                setUserAnswer(error.text)
+                console.log(error.text);
+            });
+        e.target.reset()
+
+        if (isPopup) {
+            setTimeout(() => {
+                setForm(false)
+            }, 4000)
+        } else {
+            setTimeout(() => {
+                setUserAnswer('')
+            }, 4000)
+        }
     }
 
-    const onInputChange = e => {
-        const { name, value} = e.target
 
-        setForm({
-            ...form,
-            [name]: value
-        })
-    }
     return (
        isPopup
         ?  <div className="form-wrapper" onClick={handleFormClose}>
@@ -40,9 +50,7 @@ function Form({title, handleFormClose, isPopup}) {
                                className="form-input input"
                                type="text"
                                name="name"
-                               value={form.name}
                                placeholder="Ваше имя"
-                               onChange={onInputChange}
                            />
 
                            <label htmlFor="email">Введите ваш Email: </label>
@@ -50,22 +58,21 @@ function Form({title, handleFormClose, isPopup}) {
                                className="form-input input"
                                type="email"
                                name="email"
-                               value={form.email}
                                placeholder="Ваш email"
-                               onChange={onInputChange}
                            />
 
                            <label htmlFor="textarea">Введите ваш вопрос: </label>
                            <textarea
                                className="textarea"
-                               name="textarea"
+                               name="message"
                                cols="30"
                                rows="3"
-                               value={form.message}
                                placeholder="Ваше сообщение"
-                               onChange={onInputChange}
                            />
-                           <button className="form-button button" type="submit">Отправить</button>
+                           <div className="form-submit">
+                               <button className="form-button button" type="submit">Отправить</button>
+                               <p className="form-answer">{userAnswer}</p>
+                           </div>
                        </form>
                    </div>
                </div>
@@ -80,9 +87,7 @@ function Form({title, handleFormClose, isPopup}) {
                        className="form-input input element-with-changing-styles"
                        type="text"
                        name="name"
-                       value={form.name}
                        placeholder="Ваше имя"
-                       onChange={onInputChange}
                    />
 
                    <label htmlFor="email element-with-changing-styles">Введите ваш Email: </label>
@@ -90,22 +95,21 @@ function Form({title, handleFormClose, isPopup}) {
                        className="form-input input element-with-changing-styles"
                        type="email"
                        name="email"
-                       value={form.email}
                        placeholder="Ваш email"
-                       onChange={onInputChange}
                    />
 
                    <label htmlFor="textarea element-with-changing-styles">Введите ваш вопрос: </label>
                    <textarea
                        className="textarea element-with-changing-styles"
-                       name="textarea"
+                       name="message"
                        cols="30"
                        rows="3"
-                       value={form.message}
                        placeholder="Ваше сообщение"
-                       onChange={onInputChange}
                    />
-                   <button className="form-button button element-with-changing-styles" type="submit">Отправить</button>
+                   <div className="form-submit">
+                       <button className="form-button button" type="submit">Отправить</button>
+                       <p className="form-answer">{userAnswer}</p>
+                   </div>
                </form>
            </div>
     );

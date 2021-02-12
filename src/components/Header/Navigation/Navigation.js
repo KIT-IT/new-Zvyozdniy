@@ -8,19 +8,13 @@ function Navigation({navigationClass, handleFormOpen}) {
     const [mobile, setMobile] = useState(false)
     const [click, setClick] = useState(false)
     const input  = document.querySelector('#checkbox')
-    const [isClicked, setIsClicked] = useState(true)
-
 
     const handleClick = () => {
         setClick(!click)
-        setIsClicked(false)
         if (mobile) {
             input.checked = false
         }
     }
-
-
-
 
     const handleMobileMenu = () => {
         if (window.innerWidth <= 900) {
@@ -48,7 +42,6 @@ function Navigation({navigationClass, handleFormOpen}) {
                 isIcon={item.isIcon}
                 isDrop={item.isDrop}
                 handleClick={handleClick}
-                isClicked={isClicked}
                 dropdown={
                     item.drop.map(i => {
                         return (
@@ -70,13 +63,13 @@ function Navigation({navigationClass, handleFormOpen}) {
     return (
             mobile
              ? <MobileNavigation list={list} click={click} handleClick={handleClick} setClick={setClick} handleFormOpen={handleFormOpen} />
-             : <nav className="navigation__body">
+             :
+                <nav className="navigation__body">
                     { navigationClass === 'fixed-navigation'
                         ? <ul className="navigation-list _container">{list}</ul>
                         : <ul className="navigation-list">{list}</ul>
                     }
-               </nav>
-
+                </nav>
     );
 }
  

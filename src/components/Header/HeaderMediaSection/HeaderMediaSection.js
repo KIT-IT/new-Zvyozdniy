@@ -23,7 +23,7 @@ function HeaderMediaSection() {
                         </div>
                         <div className="info-mail">
                             <FontAwesomeIcon className='header-icon element-with-changing-styles' icon={faEnvelope} />
-                            <a className="info-mail__link" href="mailto:zvyozdniy@mail.ru">zvyozdniy@mail.ru</a>
+                            <a className="info-mail__link" href="mailto:zvezdnii45@list.ru">zvezdnii45@list.ru</a>
                         </div>
                     </div>
                 </div>

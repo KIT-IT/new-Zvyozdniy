@@ -34,7 +34,7 @@ function EventsItem({id, eventDay, eventDayNumber, eventInfoDate, eventInfoTitle
                                 </div>
                             </div>
                             <div className="events-info-cost">
-                                <p className="events-info-cost__text">{id}</p>
+                                <p className="events-info-cost__text">{eventCost}</p>
                             </div>
                         </div>
                     </div>

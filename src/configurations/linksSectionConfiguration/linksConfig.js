@@ -3,25 +3,25 @@ import {faFacebookF, faInstagram, faVk, faYoutube} from "@fortawesome/free-brand
 export const linksConfig = [
     {
         key: 0,
-        to: '/',
+        to: 'https://www.facebook.com/groups/dkzvyozdniy',
         icon: faFacebookF,
         color: '#4267B2'
     },
     {
         key: 1,
-        to: '/',
+        to: 'https://vk.com/dk_zvyozdniy',
         icon: faVk,
         color: '#2787F5'
     },
     {
         key: 2,
-        to: '/',
+        to: 'https://www.instagram.com/dk_zvyozdniy/',
         icon: faInstagram,
         color: '#C13584'
     },
     {
         key: 3,
-        to: '/',
+        to: 'https://www.youtube.com/channel/UCZhb3VQXiD8S7fDOZ5vbBbg',
         icon: faYoutube,
         color: '#FF0000'
     }

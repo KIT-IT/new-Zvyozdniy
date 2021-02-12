@@ -9,13 +9,12 @@ function InfoAboutAssociation() {
                         <p className="association__title_text">Важная Информация !</p>
                     </div>
                     <div className="association__info">
-                        <p className="association__info-title">C 1 января 2021 года произошло обьединение нескольких муниципальных учреждений Краснопахорского поселения:</p>
+                        <p className="association__info-title">В январе 2021 года, на территории поселения Краснопахорское в городе Москве, путём слиняния нескольких юредических лиц был организован культурный комплекс МБУК "Дом культуры "Звёздный", в состав которого входят обособленные структурные подразделения : </p>
                         <ul className="association__info-list">
-                            <li className="association__info-list_item"> -  «Краснопахорская централизованная библиотечная система»</li>
-                            <li className="association__info-list_item"> -  Дом Культуры "Юбилейный"</li>
-                            <li className="association__info-list_item"> -  Дом Культуры "Звёздный"</li>
+                            <li className="association__info-list_item"> -  Краснопахорская библиотечная система</li>
+                            <li className="association__info-list_item"> -  Дом культуры "Юбилейный"</li>
                         </ul>
-                        <p className="association__info-description">Всю необходимую информация по каждому из учреждений вы можете найти на официальном сайте и в социальных сетях Дома Культуры "Звёздный"</p>
+                        <p className="association__info-description">Всю необходимую информация по каждому из учреждений вы можете найти на официальном сайте и в социальных сетях Дома культуры "Звёздный"</p>
                     </div>
                 </div>
             </div>

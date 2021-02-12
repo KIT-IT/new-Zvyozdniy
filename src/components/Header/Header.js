@@ -89,7 +89,7 @@ function Header() {
 
     return (
         <div className="con">
-          { form ? <Form title={"Ваше сообщение"} isPopup={true} handleFormClose={handleFormClose}/> : null}
+          { form ? <Form title={"Ваше сообщение"} isPopup={true} handleFormClose={handleFormClose} setForm={setForm}/> : null}
           { visualImpaired ? <VisualImpairedSection setVisualImpaired={setVisualImpaired} visualImpaired={visualImpaired}/> : null}
           {
            mobileMenu
@@ -105,9 +105,7 @@ function Header() {
                                         <img className="header-info-logo__img" src={zvzLogo} alt="logo-zvz"/>
                                     </Link>
                                 </div>
-
                                 <SearchingInput />
-
                                 <div className="header-info-contacts">
                                     <div className="info-glasses" onClick={handleImpaired}>
                                         <FontAwesomeIcon className="element-with-changing-styles"  icon={faGlasses} color={'#fff'} style={{fontSize: '15px'}}/>

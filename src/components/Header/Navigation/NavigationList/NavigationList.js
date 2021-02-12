@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
@@ -39,7 +39,7 @@ function NavigationList({dropdown, id, text, to, isIcon, isDrop, mobile, handleC
                     : null
                 }
                 </li>
-            : <li onMouseEnter={handleDropdown} onMouseLeave={handleDropdown} key={id} className="navigation-item">
+            : <li onMouseEnter={() => setDrop(true)} onMouseLeave={() => setDrop(false)} onClick={() => setDrop(prev => !prev)} key={id} className="navigation-item">
                 <div className="navigation-item__body">
                     <Link to={to} className="navigation-item__link">
                         <div className="navigation-item__link_text">{text}</div>

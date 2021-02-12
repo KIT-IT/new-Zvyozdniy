@@ -77,7 +77,6 @@ h6 {
 
 form button, form input, form select, form textarea {
   appearance: none;
-  //border: none;
   border-radius: 0px;
   box-sizing: border-box;
   resize: none;
@@ -86,5 +85,7 @@ form button, form input, form select, form textarea {
   z-index: 1;
   outline: none !important;
 }
-//-webkit-overflow-scrolling: touch;
-//animation-play-state: paused !important;
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f6f6f6 inset;
+}

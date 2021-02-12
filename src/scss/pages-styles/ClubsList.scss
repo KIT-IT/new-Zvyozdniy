@@ -146,10 +146,10 @@
     background: #6fa89b;
     box-shadow: 0 0 15px 1px rgba(0,0,0,.3);
     border-radius: 40px;
-    max-height: 500px;
+    height: 500px;
     min-width: 100%;
     @media (max-width: 992px) {
-        max-height: 300px;
+        height: auto;
         margin-top: 50px;
         border-radius: 0;
         box-shadow: none;
@@ -270,6 +270,8 @@
         &_img {
             border-radius: 50%;
             width: 200px;
+            object-fit: cover;
+            object-position: top;
             @media (max-width: 580px) {
                 width: 170px;
             }

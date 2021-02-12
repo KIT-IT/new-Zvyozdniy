@@ -17,21 +17,17 @@
   color: black;
 }
 
-///
 .con {
   position: relative;
 }
-///
 
 .header {
-  ///
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 200;
   background: rgba(0,0,0,.7)
-  ///
 }
 
 .header-main {
@@ -53,9 +49,7 @@
   &__img {
     display: block;
     height: 70px;
-    @media (max-width: $md2+px) {
-      padding-left: 0px;
-    }
+    padding-top: 10px;
   }
 }
 

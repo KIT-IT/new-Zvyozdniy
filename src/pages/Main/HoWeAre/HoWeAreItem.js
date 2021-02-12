@@ -8,14 +8,14 @@ function HoWeAreItem({id, img, info, title_1, title_2, num}) {
     }
 
     return (
-        <li key={id} className="ho-we-are__list_item" onMouseEnter={handleText} onMouseLeave={handleText}>
-            <div className="ho-we-are-item" style={{backgroundImage: `url(${img}`}}>
+        <li key={id} className="ho-we-are__list_item" >
+            <div className="ho-we-are-item" onMouseEnter={handleText} onMouseLeave={handleText} style={{backgroundImage: `url(${img}`}}>
                 <div className="ho-we-are-item__body">
                     <div className="ho-we-are-item__content">
                         {
                             text ?
                             <div className="ho-we-are-item__content_text">
-                                <p>{info}</p>
+                                {info}
                             </div> : null
                         }
 
