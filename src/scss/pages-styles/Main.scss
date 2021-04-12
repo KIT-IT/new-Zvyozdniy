@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url("../../assets/images/newsImages/zvz-im.jpg");
+  background-image: url("../../assets/images/backgroundImages/mainBackground.jpg");
   position: relative;
   @media (max-width: 1000px) {
     background-attachment: scroll;
@@ -119,6 +119,7 @@
   padding: 10px;
   font-family: 'FuturaPT';
   font-weight: 300;
+  min-height: 110px;
   @media (max-width: $md1 + 'px') {
     height: 122px;
   }
@@ -250,6 +251,8 @@
 }
 
   .news-sidebar-title {
+    font-family: 'FuturaPT';
+    font-weight: 300;
     &__text {
       font-size: 25px;
       font-weight: bold;
@@ -257,6 +260,7 @@
   }
 
   .news-sidebar-subtitle {
+    margin: 10px 0;
     &__text {
       font-size: 20px;
       font-weight: bold;
@@ -270,7 +274,7 @@
   .moscow-event {
     font-family: 'FuturaPT';
     font-weight: 300;
-    margin: 10px 0;
+    margin: 30px 0;
     @media (max-width: 1020px) {
       margin: 20px 0;
     }
@@ -278,6 +282,7 @@
     &__type{
       &_text {
         font-size: 22px;
+        font-weight: bold;
       }
       margin-bottom: 8px;
     }
@@ -286,6 +291,7 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
+      margin: 10px 0;
       @media (max-width: 1020px) {
         width: 300px;
       }
@@ -305,7 +311,10 @@
     &__place {
       display: flex;
       align-items: center;
-      &_text {}
+      margin: 10px 0;
+      &_text {
+        font-weight: bold;
+      }
       &_icon {
         color: #ff9902;
         font-size: 15px;
@@ -315,6 +324,7 @@
     &__date {
       display: flex;
       align-items: center;
+      margin: 10px 0;
       &_text {}
       &_icon {
         color: #ff9902;
@@ -332,36 +342,38 @@
         padding-right: 0;
       }
       &_text {
-        font-size: 15px;
+        font-size: 18px;
         @media (max-width: 1020px) {
           font-size: 18px;
         }
       }
     }
     &__image {
-      max-width: 150px;
-      @media (max-width: $md1 + 'px') {
-        margin-top: 10px;
+      padding-top: 10px;
+      width: 100%;
+      max-height: 180px;
+      overflow: hidden;
+      @media (max-width: 1020px) {
+        flex: 0 0 30%;
       }
       @media (max-width: 640px) {
         margin-top: 20px;
         max-width: 400px;
+        max-height: 220px;
       }
       &_img {
         width: 100%;
-        height: auto;
+        object-fit: contain;
       }
     }
   }
 
   .moscow-event-main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 8px;
     justify-content: space-between;
-    @media (max-width: $md1 + 'px') {
-      flex-direction: column;
-    }
     @media (max-width: 1020px) {
       flex-direction: row;
     }
@@ -404,16 +416,20 @@
 }
 
 .news-item-image {
-  height: auto;
+  height: 240px;
+  @media (max-width: 1020px) {
+    height: 300px;
+  }
+  @media (max-width: $md3 + 'px') {
+    height: auto;
+  }
   &__img {
     width: 100%;
-    height: 240px;
+    height: 100%;
     border-radius: 5px;
-    @media (max-width: 1020px) {
-      height: 260px;
-    }
+    object-fit: cover;
+    object-position: top;
     @media (max-width: $md3 + 'px') {
-      height: auto;
       border-radius: 10px;
     }
   }
@@ -498,6 +514,18 @@
   height: 500px;
   position: relative;
   max-width: 100%;
+  &:hover:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4054b2;
+    pointer-events: none;
+    opacity: .5;
+  }
   @media (max-width: 850px) {
     height: 400px;
   }
@@ -546,22 +574,7 @@
       font-weight: bold;
       color: white;
       opacity: .5;
-      //z-index: 2;
     }
-  }
-  &__hover-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #4054b2;
-      opacity: 0;
-      transition:  0.5s ease;
-      &:hover {
-        opacity: .7;
-        box-shadow: inset 0 0 0 0 #1e1e1e;
-      }
   }
 }
 

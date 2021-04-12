@@ -30,7 +30,6 @@ function HoWeAreItem({id, img, info, title_1, title_2, num}) {
                         </div>
                     </div>
                 </div>
-                <div className="ho-we-are-item__hover-bg"></div>
             </div>
         </li>
     );

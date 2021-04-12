@@ -14,6 +14,7 @@ function Festivals() {
       place={item.place}
       date={item.date}
       age={item.age}
+      href={item.href}
     />
   )
  })

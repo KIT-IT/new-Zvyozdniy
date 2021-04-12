@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import PlusToMinus from "../../../PlusToMinus/PlusToMinus";
+import { useHeaderContext } from '../../../../context/headerContext';
 
 
-function NavigationList({dropdown, id, text, to, isIcon, isDrop, mobile, handleClick }) {
+function NavigationList({dropdown, id, text, to, isIcon, isDrop }) {
     const [drop, setDrop] = useState(false)
+
+    const {handleToogleMobileNavigation, mobile } = useHeaderContext()
 
     const handleDropdown = () => {
         setDrop(prev => !prev)
@@ -16,7 +19,7 @@ function NavigationList({dropdown, id, text, to, isIcon, isDrop, mobile, handleC
         mobile
             ? <li key={id} className="navigation-item">
                 <div className="navigation-item-mobile-version">
-                    <Link to={to} className="navigation-item-mobile-version__link" onClick={handleClick}>
+                    <Link to={to} className="navigation-item-mobile-version__link" onClick={handleToogleMobileNavigation}>
                         <span className="navigation-item-mobile-version__link_text">{text}</span>
                     </Link>
                     <div className="navigation-item-mobile-version__icon">

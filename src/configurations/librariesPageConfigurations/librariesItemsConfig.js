@@ -1,7 +1,7 @@
 export const pahraLibrary  = {
     title: 'Библиотека Пахра',
     subtitle: 'ФИЛИАЛ №1',
-    src: require('../../assets/images/libPhoto/pahraLibBackground.jpg'),
+    src: require('../../assets/images/libPhoto/libBackgrounds/pahraLibBackground.jpg'),
     address: 'г. Москва, поселение Краснопахорское, село Красная Пахра, улица Почтовая, дом № 5 (второй этаж).',
     worktime: 'c 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 849-32-35',
@@ -16,7 +16,7 @@ export const pahraLibrary  = {
 export const pahraKidsLibrary  = {
     title: 'Краснопахорская Детская',
     subtitle: 'ФИЛИАЛ №2',
-    src: require('../../assets/images/libPhoto/pahraKidsLibBackground.jpg'),
+    src: require('../../assets/images/libPhoto/libBackgrounds/pahraKidsLibBackground.jpg'),
     address: 'г. Москва, поселение Краснопахорское, село Красная Пахра, улица Почтовая, дом № 5',
     worktime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 849-32-25',
@@ -31,7 +31,7 @@ export const pahraKidsLibrary  = {
 export const bilovoLibrary = {
     title: 'Быловская библиотека',
     subtitle: 'ФИЛИАЛ №3',
-    src: require('../../assets/images/libPhoto/bilovoLibBackground.jpg'),
+    src: require('../../assets/images/libPhoto/libBackgrounds/bilovoLibBackground.jpg'),
     address: 'г. Москва, поселение Краснопахорское, село Былово, дом 8-А, второй этаж ДК «Юбилейный»',
     worktime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 849-32-43',
@@ -46,7 +46,7 @@ export const bilovoLibrary = {
 export const minzagLibrary  = {
     title: 'Библиотека Минзаг',
     subtitle: 'ФИЛИАЛ №4',
-    src: require('../../assets/images/libPhoto/minzagLibBackground.jpg'),
+    src: require('../../assets/images/libPhoto/libBackgrounds/minzagLibBackground.jpg'),
     address: 'г. Москва, поселение Краснопахорское, поселок Минзаг, дом 2, цокольный этаж',
     worktime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 592-47-39',

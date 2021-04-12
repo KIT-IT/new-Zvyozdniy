@@ -2,6 +2,49 @@
 
 .clubs-body {}
 
+.clubs-links {
+    display: flex;
+    @media (max-width: 920px) {
+        flex-wrap: wrap;
+    }
+}
+.clubs-shedule {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
+    @media (max-width: 920px) {
+        margin: 15px 0;
+        width: 500px;
+        justify-content: space-between;
+    }
+    @media (max-width: 540px) {
+        width: 100%;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__document {
+        margin-left: 40px;
+        border: 2px solid #000;
+        @media (max-width: 380px) {
+            margin-left: 10px;
+        }
+        &_link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            width: 130px;
+            height: 100%;
+        }
+        &_text {
+            font-size: 16px;
+        }
+    }
+}
+
 .genre-list {
     display: flex;
     align-items: center;

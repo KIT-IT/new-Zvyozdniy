@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
+import { useHeaderContext } from '../../context/headerContext';
 
-function Form({title, handleFormClose, isPopup, setForm}) {
+function Form({title, isPopup}) {
     const [userAnswer, setUserAnswer] = useState('')
+
+    const {setForm, handleFormClose} = useHeaderContext()
 
 
     const sendEmail = e => {

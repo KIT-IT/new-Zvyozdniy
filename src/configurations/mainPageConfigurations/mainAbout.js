@@ -1,7 +1,7 @@
 export const mainAbout = [
     {
         id: 0,
-        img: require('../../assets/images/123.jpg'),
+        img: require('../../assets/images/mainPageImages/mainCards/cards-1.jpg'),
         title_1: 'Ассортимент',
         title_2: 'Студий',
         text: 'Вы сможете выбрать занятия из широкого ассортимента клубных формирований',
@@ -9,7 +9,7 @@ export const mainAbout = [
     },
     {
         id: 1,
-        img: require('../../assets/images/12.jpg'),
+        img: require('../../assets/images/mainPageImages/mainCards/cards-2.jpg'),
         title_1: 'Всестороннее',
         title_2: 'Развитие',
         text: 'Все студии удобно комбинируются и могут обеспечить всестороннее развитие ребенка',
@@ -17,7 +17,7 @@ export const mainAbout = [
     },
     {
         id: 2,
-        img: require('../../assets/images/1.jpg'),
+        img: require('../../assets/images/mainPageImages/mainCards/cards-3.jpg'),
         title_1: 'Любой',
         title_2: 'Возраст',
         text: 'От самых маленьких участников клуба "Калейдоскоп" до проекта Мэра Москвы "Московское долголетие"',
@@ -25,7 +25,7 @@ export const mainAbout = [
     },
     {
         id: 4,
-        img: require('../../assets/images/14.jpg'),
+        img: require('../../assets/images/mainPageImages/mainCards/cards-4.jpg'),
         title_1: 'Топовые',
         title_2: 'Руководители',
         text: 'Все руководители умело работают с детьми и настоящие профессионалы своего дела',
@@ -33,7 +33,7 @@ export const mainAbout = [
     },
     {
         id: 5,
-        img: require('../../assets/images/1234.jpg'),
+        img: require('../../assets/images/mainPageImages/mainCards/cards-5.jpg'),
         title_1: 'Удобное',
         title_2: 'Расписание',
         text: 'Мы стараемся сделать расписание удобным как для работающих родителей, так и для детей и подростков с учетом их занятости в саду и школе',
@@ -41,7 +41,7 @@ export const mainAbout = [
     },
     {
         id: 6,
-        img: require('../../assets/images/13.jpg'),
+        img: require('../../assets/images/mainPageImages/mainCards/cards-6.jpg'),
         title_1: 'Рядом с',
         title_2: 'Домом',
         text: 'Удобное расположение позволяет посещать занятия не только жителям Красной Пахры, но и жителям близлежащих поселений',

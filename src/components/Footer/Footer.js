@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import LinksSection from "../Header/HeaderMediaSection/LinksSection/LinksSection";
+import LinksSection from "../Header/HeaderDesctopMode/HeaderMediaSection/LinksSection/LinksSection";
 import logo from '../../assets/images/logo.png'
 
 function Footer() {

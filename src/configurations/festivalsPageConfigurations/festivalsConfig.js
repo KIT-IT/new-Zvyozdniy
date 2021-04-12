@@ -7,7 +7,8 @@ export const festivalsConfig = [
   backgroundImage: require("../../assets/images/festivalsImages/red-line-Fest.jpg"),
   place: 'ДК Звёздный',
   date: 'Март',
-  age: '4 +'
+  age: '4 +',
+  //href: ''
  },
  {
   id: 2,
@@ -17,7 +18,8 @@ export const festivalsConfig = [
   backgroundImage: require('../../assets/images/festivalsImages/united-Fest.jpg'),
   place: 'ДК Звёздный',
   date: 'Апрель',
-  age: '2 +'
+  age: '2 +',
+  //href: ''
  },
  {
   id: 3,
@@ -27,17 +29,19 @@ export const festivalsConfig = [
   backgroundImage: require('../../assets/images/festivalsImages/frendly-Fest.jpg'),
   place: 'ДК Звёздный',
   date: 'Ноябрь',
-  age: '10 +'
+  age: '10 +',
+  //href: ''
  },
  {
   id: 4,
-  title: 'Межригеональный Духовно-Просветительский Праздник',
+  title: 'Межрегиональный Духовно-Просветительский Праздник',
   name: 'Троицкие Гуляния',
   info: 'Традиции нашего народа – это живая историческая память, воплощение всего пройденного нацией пути, запечатленный опыт сотен поколений.Сохранение этого наследия – благородная задача, выпавшая на долю терпеливых и неутомимых тружеников, собирателей отечественного духовного достояния',
   backgroundImage: require('../../assets/images/festivalsImages/troitsk-Fest.jpg'),
   place: 'Парк Победы',
   date: 'Май',
-  age: '0 +'
+  age: '0 +',
+  //href: ''
  },
  {
   id: 5,
@@ -47,6 +51,7 @@ export const festivalsConfig = [
   backgroundImage: require('../../assets/images/festivalsImages/semenovna-Fest.jpg'),
   place: 'ДК Звёздный',
   date: 'Май',
-  age: '0 +'
+  age: '0 +',
+  href: require('../../assets/docs/festivals/Заявка.docx')
  }
 ]

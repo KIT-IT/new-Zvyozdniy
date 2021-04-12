@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {linksConfig} from "../../../../configurations/linksSectionConfiguration/linksConfig";
+import { linksConfig } from "../../../../../configurations/linksSectionConfiguration/linksConfig";
 
 
-const LinksSection = ({cls, color, id}) =>  {
+const LinksSection = ({ cls, color, id }) =>  {
     const list = linksConfig.map((item,index ) => {
         const handleIconColor = () => {
             const icons = document.querySelectorAll(`#${id}`)

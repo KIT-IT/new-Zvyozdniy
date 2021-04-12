@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 function EventsPreview() {
     const list = eventsConfig.map((item, index) => {
-        if (index >= 10 && index <= 13) {
+        if (index >= 14 && index <= 17) {
             return (
                 <li key={item.id} className="events-preview-item">
                     <div className="events-preview-item__body">

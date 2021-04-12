@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from "./components/Footer/Footer";
 import Main from "./pages/Main/Main";
-import About from './pages/About/About';
+import About from './pages/About/About/About';
 import Personal from './pages/About/Personal/Personal';
 import Documents from './pages/About/Documents/Documents';
 import Libraries from './pages/Libraries/Libraries';
@@ -21,13 +21,16 @@ import SearchingResult from "./pages/SearchingResult/SearchingResult";
 import ScrollToTop from "./utils/ScrollToTop";
 import NoMatch from "./pages/404/NoMatch";
 import {SearchProvider} from "./context/inputSearchContext";
+import {HeaderProvider} from './context/headerContext' 
 
 
 function App() {
     return (
-        <SearchProvider>
+<HeaderProvider>
+  <SearchProvider>
     <Router>
         <ScrollToTop />
+        
         <Header/>
         <Switch>
             <Route path="/" exact component={Main}/>
@@ -106,7 +109,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/events/"><Events month="Февраль"/></Route>
+            <Route path="/events/"><Events month="Апрель"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
 
             <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
@@ -128,7 +131,8 @@ function App() {
         </Switch>
         <Footer />
     </Router>
-        </SearchProvider>
+  </SearchProvider>
+</HeaderProvider>
   );
 }
 

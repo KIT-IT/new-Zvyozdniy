@@ -19,6 +19,8 @@ function Clubs() {
         )
     })
 
+    const href = require('../../assets/docs/Расписание-01.02.2021.pdf')
+
     return (
         <div className="clubs wrapper">
             <PagePreview
@@ -29,6 +31,32 @@ function Clubs() {
             />
             <div className="clubs-body _container _content">
                 <h1 className="_subtitle">Направления</h1>
+                <div className="clubs-links">
+                <div className="clubs-shedule">
+                    <div className="clubs-shedule__title">Расписание занятий</div>
+                    <div className="clubs-shedule__document button">
+                        <a 
+                            className="clubs-shedule__document_link"  
+                            href={href}
+                            rel="noopener noreferrer"
+                            target="_blank">
+                                <span className="clubs-shedule__document_text">Открыть</span>
+                        </a>
+                    </div>
+                </div>
+                <div className="clubs-shedule">
+                    <div className="clubs-shedule__title">Запись в клубные формирования</div>
+                    <div className="clubs-shedule__document button">
+                        <a 
+                            className="clubs-shedule__document_link"  
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScb-8NnbucWK95eEDhBfw6mzssZOMw0RXrCDskcraa_fc1o0A/viewform"
+                            rel="noopener noreferrer"
+                            target="_blank">
+                                <span className="clubs-shedule__document_text">Перейти</span>
+                        </a>
+                    </div>
+                </div>
+                </div>
                 <ul className="genre-list">
                     {list}
                 </ul>

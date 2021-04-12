@@ -7,26 +7,26 @@ export const personalData = [
     },
     {
         id: 2,
-        src: require('../../assets/images/pesonalPhoto/kate-goremikina.png'),
+        src: require('../../assets/images/pesonalPhoto/kate-goremikina.jpg'),
         name: 'Горемыкина Екатерина Евгеньевна',
         position: 'Заместитель директора'
     },
     {
         id: 3,
         src: require('../../assets/images/pesonalPhoto/lena-mihailina.jpg'),
-        name: 'Михайлина Елена Дмитриевна',
-        position: 'Заведующая отдела по культурно-досуговой деятельности'
+        name: 'Михайлина Елена Ивановна',
+        position: 'Заместитель директора по культурно-досуговой деятельности'
     },
     {
         id: 4,
-        src: require('../../assets/images/pesonalPhoto/helena.JPG'),
+        src: require('../../assets/images/pesonalPhoto/elena-miroshnichenko.jpg'),
         name: 'Мирошниченко Елена Сергеевна',
-        position: 'Заведующая отдела по работе клубных формирований'
+        position: 'Заведующий отдела по работе клубных формирований'
     },
     {
         id: 5,
         src: require('../../assets/images/pesonalPhoto/lyudmila-abramova.jpg'),
         name: 'Абрамова Людмила Александровна',
-        position: 'Заведующая библиотечного отдела'
+        position: 'Заведующий библиотечного отдела'
     }
 ]

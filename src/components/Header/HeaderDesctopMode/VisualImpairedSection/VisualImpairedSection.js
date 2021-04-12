@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFont} from '@fortawesome/free-solid-svg-icons'
+import { useHeaderContext } from '../../../../context/headerContext'
 
 
-function VisualImpairedSection({visualImpaired ,setVisualImpaired}) {
+function VisualImpairedSection() {
     const [fontSize, setFontSize] = useState('')
     const [bodyLetterSpacing, setBodyLetterSpacing] = useState('')
     const [bodyLineHeight, setBodyLineHeight] = useState('')
@@ -16,6 +17,8 @@ function VisualImpairedSection({visualImpaired ,setVisualImpaired}) {
     })
 
     const links = document.querySelectorAll('a, p')
+
+    const {visualImpaired, setVisualImpaired} = useHeaderContext()
 
 
     const handleClick = () => {
