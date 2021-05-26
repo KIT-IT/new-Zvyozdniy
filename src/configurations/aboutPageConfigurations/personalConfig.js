@@ -28,5 +28,11 @@ export const personalData = [
         src: require('../../assets/images/pesonalPhoto/lyudmila-abramova.jpg'),
         name: 'Абрамова Людмила Александровна',
         position: 'Заведующий библиотечного отдела'
+    },
+    {
+        id: 6,
+        src: require('../../assets/images/pesonalPhoto/RomanchevaMadina.jpg'),
+        name: 'Романчева Мадина Омаросхабовна',
+        position: 'Режиссёр - постановщик массовых мероприятий'
     }
 ]
