@@ -117,24 +117,19 @@ export const navList  = [
         type: 'services',
         id: 5,
         to: '/',
-        text: 'Услуги',
+        text: 'Лето 2021',
         isIcon: true,
         isDrop: true,
         drop: [
             {
                 id: 10,
-                to: '/',
-                text: 'Аренда Зала'
+                to: '/kult-leto/',
+                text: 'Культлето'
             },
             {
                 id: 11,
-                to: '/',
-                text: 'Студия Звукозаписи'
-            },
-            {
-                id: 12,
-                to: '/',
-                text: 'Проведение Мероприятий'
+                to: '/l-t-l/',
+                text: 'Летняя творческая лаборатория'
             }
         ]
     },

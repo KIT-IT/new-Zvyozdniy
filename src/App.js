@@ -22,6 +22,8 @@ import ScrollToTop from "./utils/ScrollToTop";
 import NoMatch from "./pages/404/NoMatch";
 import {SearchProvider} from "./context/inputSearchContext";
 import {HeaderProvider} from './context/headerContext' 
+import Kultleto from './pages/KultLeto/Kultleto';
+import Ltl from './pages/LTL/Ltl';
 
 
 function App() {
@@ -109,7 +111,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/events/"><Events month="Апрель"/></Route>
+            <Route path="/events/"><Events month="Июль"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
 
             <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
@@ -126,6 +128,9 @@ function App() {
 
             <Route path="/clubs/moscow-longevity/"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
 
+
+            <Route path="/kult-leto/" component={Kultleto}/>
+            <Route path="/l-t-l/" component={Ltl}/>
 
             <Route path="*" component={NoMatch} />
         </Switch>

@@ -19,7 +19,7 @@ function Clubs() {
         )
     })
 
-    const href = require('../../assets/docs/Расписание-01.02.2021.pdf')
+    const href = require('../../assets/docs/shedule-leto.pdf')
 
     return (
         <div className="clubs wrapper">
