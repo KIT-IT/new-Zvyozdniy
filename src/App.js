@@ -22,9 +22,6 @@ import ScrollToTop from "./utils/ScrollToTop";
 import NoMatch from "./pages/404/NoMatch";
 import {SearchProvider} from "./context/inputSearchContext";
 import {HeaderProvider} from './context/headerContext' 
-import Kultleto from './pages/KultLeto/Kultleto';
-import Ltl from './pages/LTL/Ltl';
-
 
 function App() {
     return (
@@ -127,10 +124,6 @@ function App() {
             <Route path="/clubs/theatre/"><ClubsList clubsList={theatreClubs} title={"Театральное искусство"} abbreviated={"Театр"}/></Route>
 
             <Route path="/clubs/moscow-longevity/"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
-
-
-            <Route path="/kult-leto/" component={Kultleto}/>
-            <Route path="/l-t-l/" component={Ltl}/>
 
             <Route path="*" component={NoMatch} />
         </Switch>
