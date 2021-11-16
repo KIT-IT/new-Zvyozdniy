@@ -35,6 +35,8 @@ function Events({month}) {
         setActiveIndex(pageNumber)
     }
 
+    
+
     return (
         <div className="events wrapper">
             <PagePreview

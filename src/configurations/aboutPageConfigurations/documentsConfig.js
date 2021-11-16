@@ -225,7 +225,12 @@ export const documentsData = [
                 id: 2,
                 href: require('../../assets/docs/coruption/отчёт-кор-1-2021.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 1 квартал 2021 год'
-            }
+            },
+            {
+                id: 3,
+                href: require('../../assets/docs/coruption/Отчет-за-1-полугодие2021.pdf'),
+                text: 'Отчёт о работе по противодействию коррупции за 1 полугодие 2021 год'
+            },
         ]
     }
 ]

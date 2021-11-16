@@ -13,7 +13,7 @@ export const zvyozdniyCultureCenter = {
 
 export const bilovoCultureCenter = {
     id: 2,
-    title: 'Муниципальное Бюджетное Учреждение Культуры Дом Культуры "Юбилейный"',
+    title: 'Обособленное структурное подразделение Дом Культуры "Юбилейный"',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5b325c639a59be61ec6758462146451a35a1dfdd0a54c138d09e4264d58aa6d8&amp;source=constructor',
     address: '108828, Москва, с.Былово, д.8-а',
     worktime: 'Ежедневно с 10.00 до 20.00 без перерыва на обед',
