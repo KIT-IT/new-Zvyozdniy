@@ -16,12 +16,12 @@ import Clubs from './pages/Clubs/Clubs';
 import ClubsList from './pages/Clubs/ClubsList/ClubsList';
 import {circusClubs, earlyDevelopmentClubs, artClubs, vocalClubs, danceClubs, theatreClubs, longevityClubs} from './configurations/clubsPageConfigurations/clubsListsConfig'
 import Festivals from './pages/Festivals/Festivals';
-import Services from "./pages/Services/Services";
 import SearchingResult from "./pages/SearchingResult/SearchingResult";
 import ScrollToTop from "./utils/ScrollToTop";
 import NoMatch from "./pages/404/NoMatch";
 import {SearchProvider} from "./context/inputSearchContext";
 import {HeaderProvider} from './context/headerContext' 
+import TiNAO from './pages/10yearsTiNAO/TiNAO';
 
 function App() {
     return (
@@ -33,7 +33,7 @@ function App() {
         <Header/>
         <Switch>
             <Route path="/" exact component={Main}/>
-            <Route path="/services/" component={Services}/>
+            <Route path="/tinao/" component={TiNAO}/>
             <Route path="/about/" component={About} />
             <Route path="/personal/" component={Personal} />
             <Route path="/documents/" component={Documents} />
@@ -108,7 +108,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/events/"><Events month="Ноябрь"/></Route>
+            <Route path="/events/"><Events month="Январь"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
 
             <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>

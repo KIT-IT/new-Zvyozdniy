@@ -114,15 +114,6 @@ export const navList  = [
         ]
     },
     {
-        type: 'services',
-        id: 5,
-        to: '/',
-        text: 'Услуги',
-        isIcon: false,
-        isDrop: true,
-        drop: []
-    },
-    {
         type: 'festivals',
         id: 6,
         to: '/festivals/',
@@ -130,5 +121,14 @@ export const navList  = [
         isIcon: false,
         isDrop: false,
         drop: []
-    }
+    },
+    {
+        type: 'tinao',
+        id: 5,
+        to: '/',
+        text: 'Услуги',
+        isIcon: false,
+        isDrop: false,
+        drop: []
+    },
 ]

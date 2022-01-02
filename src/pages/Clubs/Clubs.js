@@ -49,7 +49,7 @@ function Clubs() {
                     <div className="clubs-shedule__document button">
                         <a 
                             className="clubs-shedule__document_link"  
-                            href="https://docs.google.com/forms/d/e/1FAIpQLScb-8NnbucWK95eEDhBfw6mzssZOMw0RXrCDskcraa_fc1o0A/viewform"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScgPk2nZU38AadPn0FuHjpbGWrAXpJX59h6XTGkH07NHM3Daw/viewform"
                             rel="noopener noreferrer"
                             target="_blank">
                                 <span className="clubs-shedule__document_text">Перейти</span>
