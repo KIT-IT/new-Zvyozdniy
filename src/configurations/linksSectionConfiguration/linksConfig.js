@@ -1,12 +1,6 @@
-import {faFacebookF, faInstagram, faVk, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faTelegram, faVk, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export const linksConfig = [
-    {
-        key: 0,
-        to: 'https://www.facebook.com/groups/dkzvyozdniy',
-        icon: faFacebookF,
-        color: '#4267B2'
-    },
     {
         key: 1,
         to: 'https://vk.com/dk_zvyozdniy',
@@ -15,9 +9,9 @@ export const linksConfig = [
     },
     {
         key: 2,
-        to: 'https://www.instagram.com/dk_zvyozdniy/',
-        icon: faInstagram,
-        color: '#C13584'
+        to: 'https://t.me/dkzvyozdniy',
+        icon: faTelegram,
+        color: '#31a7db'
     },
     {
         key: 3,

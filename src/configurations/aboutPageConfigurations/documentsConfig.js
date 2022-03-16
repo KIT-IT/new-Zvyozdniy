@@ -129,6 +129,11 @@ export const documentsData = [
         isDrop: true,
         drop: [
             {
+                id: 0,
+                href: require('../../assets/docs/pfhd/ПФХД-2022.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2022 год'
+            },
+            {
                 id: 1,
                 href: require('../../assets/docs/pfhd/ПФХД-2021.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2021 год'
@@ -147,11 +152,6 @@ export const documentsData = [
                 id: 4,
                 href: require('../../assets/docs/pfhd/ПФХД-2018.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2018 год'
-            },
-            {
-                id: 5,
-                href: require('../../assets/docs/pfhd/ПФХД-2017.pdf'),
-                text: 'План финансово-хозяйственной деятельности на 2017 год'
             }
         ]
     },
@@ -160,6 +160,11 @@ export const documentsData = [
         text: 'Муниципальное Задание',
         isDrop: true,
         drop: [
+            {
+                id: 0,
+                href: require('../../assets/docs/municipal/МЗ-2022.pdf'),
+                text: 'Муниципальное задание на 2022 год'
+            },
             {
                 id: 1,
                 href: require('../../assets/docs/municipal/МЗ-2019.pdf'),

@@ -125,8 +125,8 @@ export const navList  = [
     {
         type: 'tinao',
         id: 5,
-        to: '/',
-        text: 'Услуги',
+        to: '/tinao',
+        text: '10 лет ТиНАО',
         isIcon: false,
         isDrop: false,
         drop: []

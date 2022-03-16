@@ -9,7 +9,7 @@ function HeaderMediaSection() {
         <div className="header-media-section element-with-changing-styles">
             <div className="header-media-section__body _container">
                 <div className="header-media-section__links">
-                    <LinksSection cls={"header-icon element-with-changing-styles"} color={'#fff'} id={'header-icon'}/>
+                    <LinksSection cls={"header-icon element-with-changing-styles"} color={'#fff'} />
                 </div>
                 <div className="info-line">
                     <div className="info-line__body">

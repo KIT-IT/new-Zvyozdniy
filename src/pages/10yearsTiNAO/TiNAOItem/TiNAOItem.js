@@ -23,9 +23,13 @@ function TiNAOItem(props) {
               <div className="tinao-item__date_value">{props.date}</div>
             </div>
             <div className="tinao-item__document">
-              <a className="tinao-item__document_link" href={props.document} rel="noopener noreferrer" target="_blank">
+              {
+                !props.document
+                ? <p className="tinao-item__document_text">Положение</p>
+                : <a className="tinao-item__document_link" href={props.document} rel="noopener noreferrer" target="_blank">
                 <span className="tinao-item__document_text">Положение</span>
               </a>
+              }
             </div>
           </div>
         </div>
