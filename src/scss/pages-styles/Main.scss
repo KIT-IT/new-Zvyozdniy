@@ -166,13 +166,13 @@
     display: block;
   }
   &__title {
-    flex: 33.333%;
+    flex: 50%;
     &_text {
       margin-bottom: 0;
     }
   }
   &__links {
-    flex: 66.666%;
+    flex: 50%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
