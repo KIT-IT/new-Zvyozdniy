@@ -115,7 +115,7 @@ export const navList  = [
     },
     {
         type: 'festivals',
-        id: 6,
+        id: 5,
         to: '/festivals/',
         text: 'Фестивали',
         isIcon: false,
@@ -124,11 +124,31 @@ export const navList  = [
     },
     {
         type: 'tinao',
-        id: 5,
+        id: 6,
         to: '/tinao',
         text: '10 лет ТиНАО',
         isIcon: false,
         isDrop: false,
         drop: []
+    },
+    {
+        type: 'leto',
+        id: 7,
+        to: '/main-leto/',
+        text: 'Лето 2022',
+        isIcon: true,
+        isDrop: true,
+        drop: [
+            {
+                id: 15,
+                to: '/kult-leto/',
+                text: 'Культлето'
+            },
+            {
+                id: 16,
+                to: '/ltl/',
+                text: 'ЛТЛ 2022'
+            }
+        ]
     },
 ]

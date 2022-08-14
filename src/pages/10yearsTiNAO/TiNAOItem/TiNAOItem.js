@@ -25,10 +25,10 @@ function TiNAOItem(props) {
             <div className="tinao-item__document">
               {
                 !props.document
-                ? <p className="tinao-item__document_text">Положение</p>
+                ? <p className="tinao-item__document_text">{props.isDone ? 'Итоги' : 'Положение'}</p>
                 : <a className="tinao-item__document_link" href={props.document} rel="noopener noreferrer" target="_blank">
-                <span className="tinao-item__document_text">Положение</span>
-              </a>
+                    <span className="tinao-item__document_text">{props.isDone ? 'Итоги' : 'Положение'}</span>
+                  </a>
               }
             </div>
           </div>

@@ -58,12 +58,12 @@ export const festivalsConfig = [
     id: 5,
     title: 'Фестиваль',
     name: 'Содружество',
-    info: 'Фестиваль «Содружество» проводится в рамках Всероссийского фестиваля "Русь Великая", посвященных Дню славянской письменности и культуры, на территории ТиНАО города Москвы',
+    info: 'Фестиваль «Содружество» приурочен к Дню славянской письменности и культуры, на территории ТиНАО города Москвы',
     backgroundImage: require('../../assets/images/festivalsImages/United-fest.jpg'),
     place: 'ДК Звёздный',
     date: 'Май',
     age: '4 +',
-    href: require('../../assets/docs/festivals/Содружество-2021.docx')
+    href: require('../../assets/docs/festivals/Содружество-2022.docx')
   },
   {
     id: 6,
@@ -85,7 +85,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Июнь',
     age: '3 +',
-    href: require('../../assets/docs/festivals/Модное-детство.docx')
+    href: require('../../assets/docs/festivals/Модное-детство-2022.docx')
   },
   {
     id: 8,

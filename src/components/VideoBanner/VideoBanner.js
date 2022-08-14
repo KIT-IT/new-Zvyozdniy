@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../../assets/video/open-doors-2021.mp4'
+import video from '../../assets/video/video-2.2.mp4'
 
 function VideoBanner() {
   return (

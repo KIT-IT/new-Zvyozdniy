@@ -125,6 +125,23 @@ export const documentsData = [
     },
     {
         id: 3,
+        text: 'Методические разработки',
+        isDrop: true,
+        drop: [
+            {
+                id: 1,
+                href: require('../../assets/docs/methodic/estrada-vocal.pdf'),
+                text: 'Методическая разработка мастер-класса по эстрадному вокалу'
+            },
+            {
+                id: 2,
+                href: require('../../assets/docs/methodic/narodniy-vocal.pdf'),
+                text: 'Методическая разработка мастер – класса по народному вокалу'
+            },
+        ]
+    },
+    {
+        id: 4,
         text: 'Финансово-хозяйственная Деятельность',
         isDrop: true,
         drop: [
@@ -156,7 +173,7 @@ export const documentsData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         text: 'Муниципальное Задание',
         isDrop: true,
         drop: [
@@ -193,7 +210,7 @@ export const documentsData = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         text: 'Вид Деятельности',
         isDrop: true,
         drop: [
@@ -205,7 +222,7 @@ export const documentsData = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         text: 'Сведения Об Учреждении',
         isDrop: true,
         drop: [
@@ -217,7 +234,7 @@ export const documentsData = [
         ]
     },
     {
-        id: 7,
+        id: 8,
         text: 'Противодействие коррупции',
         isDrop: true,
         drop: [
@@ -240,6 +257,11 @@ export const documentsData = [
                 id: 4,
                 href: require('../../assets/docs/coruption/план-против-коррупции-2022.pdf'),
                 text: 'План мероприятий по противодействию коррупции на 2022 год'
+            },
+            {
+                id: 5,
+                href: require('../../assets/docs/coruption/Отчет-за-1-полугодие-2022.pdf'),
+                text: 'Отчёт о работе по противодействию коррупции за 1 полугодие 2022 год'
             }
         ]
     }
