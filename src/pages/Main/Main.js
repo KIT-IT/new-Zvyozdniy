@@ -24,7 +24,7 @@ function Main() {
                    </div>
                </div>
            </div> */}
-           <VideoBanner />
+            <VideoBanner />
             <div className="main-content">
                 <div className="main-content__body">
                     {<HoWeAre />}

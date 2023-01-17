@@ -130,25 +130,5 @@ export const navList  = [
         isIcon: false,
         isDrop: false,
         drop: []
-    },
-    {
-        type: 'leto',
-        id: 7,
-        to: '/main-leto/',
-        text: 'Лето 2022',
-        isIcon: true,
-        isDrop: true,
-        drop: [
-            {
-                id: 15,
-                to: '/kult-leto/',
-                text: 'Культлето'
-            },
-            {
-                id: 16,
-                to: '/ltl/',
-                text: 'ЛТЛ 2022'
-            }
-        ]
-    },
+    }
 ]

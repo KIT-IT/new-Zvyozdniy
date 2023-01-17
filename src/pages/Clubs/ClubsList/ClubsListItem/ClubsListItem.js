@@ -108,15 +108,6 @@ function ClubsListItem({ club, group, age, info, manage, managePhoto, shedule, c
                 </div>
                </div>
             </div>
-            <div className="club-registration-block">
-                <div className="club-registration-block__body _container">
-                    <p className="club-registration-block__body_title">Код группы для записи </p>
-                    <div className="club-registration-block__info">
-                        <a href="https://www.mos.ru/" target="_blank" rel="noopener noreferrer" className="club-registration-block__info_link">mos.ru </a>
-                        <p className="club-registration-block__info_code">: {code}</p>
-                    </div>
-                </div>
-            </div>
         </li>
     )
 

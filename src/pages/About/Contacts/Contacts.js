@@ -42,6 +42,29 @@ function Contacts() {
                     </div>
                 </div>
                 { contacts }
+                <div className="contacts-uchred">
+                    <div className="contacts-uchred__body _container">
+                        <div className="contacts-uchred__title">Учредитель МБУК «ДК «Звездный» Администрация поселения Краснопахорское</div>
+                        <div className="contacts-uchred__info">
+                            <div className="contacts-uchred__info-block">
+                                <div className="contacts-uchred__info-block_title">Адрес:</div>
+                                <div className="contacts-uchred__info-block_info">108828, г. Москва, п. Краснопахорское, с. Красная Пахра, ул. Заводская, д. 25</div>
+                            </div>
+                            <div className="contacts-uchred__info-block">
+                                <div className="contacts-uchred__info-block_title">Телефон:</div>
+                                <a className="contacts-uchred__info-block_info" href="tel:+74958508143">+7 (495) 850 – 81 – 43</a>
+                            </div>
+                            <div className="contacts-uchred__info-block">
+                                <div className="contacts-uchred__info-block_title">Mail:</div>
+                                <a className="contacts-uchred__info-block_info" href="mailto:krasnopahorsckoe@yandex.ru">krasnopahorsckoe@yandex.ru</a>
+                            </div>
+                            <div className="contacts-uchred__info-block">
+                                <div className="contacts-uchred__info-block_title">Сайт:</div>
+                                <a className="contacts-uchred__info-block_info" href="https://krasnaya-pahra.ru/">https://krasnaya-pahra.ru/</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
          </div>
     )

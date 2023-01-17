@@ -7,7 +7,7 @@ export const zvyozdniyCultureCenter = {
     title: 'Муниципальное Бюджетное Учреждение Культуры Дом Культуры "Звёздный"',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3Aca072e9bdf2f728de508ecd73657a748accc0f09ac4e55ffa1f1b5a0c0b71f6a&amp;source=constructor',
     address: '108828, Москва, п.Краснопахорское, с.Красная Пахра, ул.Заводская, д.20',
-    worktime: 'Ежедневно с 10.00 до 20.00 без перерыва на обед',
+    worktime: 'Ежедневно с 08.00 до 22.00 без перерыва на обед',
     phone: '+7 (495)850-80-53',
 }
 
@@ -44,7 +44,7 @@ export const pahraKidsLibraryContacts = {
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5e32a382f60a3445ac2e29d47650ea9798e68cbe3a24314960781549af94f9af&amp;source=constructor',
     address: '108828, Москва, п.Краснопахорское, с.Красная Пахра, ул.Почтовая, д.5',
     worktime: 'c 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
-    phone: '+7 (495) 849-32-35'
+    phone: '+7 (495) 849-32-25'
 }
 
 export const minzagLibraryContacts = {

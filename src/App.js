@@ -22,9 +22,6 @@ import NoMatch from "./pages/404/NoMatch";
 import {SearchProvider} from "./context/inputSearchContext";
 import {HeaderProvider} from './context/headerContext' 
 import TiNAO from './pages/10yearsTiNAO/TiNAO';
-import Ltl from './pages/Leto2022/Ltl.jsx';
-import Kultleto from './pages/Leto2022/KultLeto';
-import Leto from './pages/Leto2022/MainLetoPage';
 
 function App() {
     return (
@@ -111,7 +108,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/events/"><Events month="Август"/></Route>
+            <Route path="/events/"><Events month="Декабрь"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
 
             <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
@@ -127,12 +124,6 @@ function App() {
             <Route path="/clubs/theatre/"><ClubsList clubsList={theatreClubs} title={"Театральное искусство"} abbreviated={"Театр"}/></Route>
 
             <Route path="/clubs/moscow-longevity/"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
-
-            <Route path="/main-leto/" component={Leto}></Route>
-
-            <Route path="/ltl/" component={Ltl}></Route>
-
-            <Route path="/kult-leto/" component={Kultleto}></Route>
 
             <Route path="*" component={NoMatch} />
         </Switch>

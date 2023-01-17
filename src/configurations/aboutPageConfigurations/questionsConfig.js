@@ -180,7 +180,7 @@ export const questionEventsData = [
     },
     {
         id: 2,
-        text: 'Можно ли провести мироприятие для класса?',
+        text: 'Можно ли провести мероприятие для класса?',
         drop: [
             {
                 id: 2,
@@ -190,7 +190,7 @@ export const questionEventsData = [
     },
     {
         id: 3,
-        text: 'Какие мироприятия у вас проводятся?',
+        text: 'Какие мероприятия у вас проводятся?',
         drop: [
             {
                 id: 3,
@@ -200,7 +200,7 @@ export const questionEventsData = [
     },
     {
         id: 4,
-        text: 'Как купить билет на мироприятие?',
+        text: 'Как купить билет на мероприятие?',
         drop: [
             {
                 id: 4,

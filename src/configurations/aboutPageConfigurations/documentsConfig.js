@@ -58,6 +58,16 @@ export const documentsData = [
                 id: 11,
                 href: require('../../assets/docs/uchreditelnie/изменение-адреса.pdf'),
                 text: 'Распоряжение об изменении адреса'
+            },
+            {
+                id: 12,
+                href: require('../../assets/docs/uchreditelnie/договор-присоединения-2020.pdf'),
+                text: 'Договор о присоединении'
+            },
+            {
+                id: 13,
+                href: require('../../assets/docs/uchreditelnie/передаточный-акт-присоединения.pdf'),
+                text: 'Передаточный акт к договору о присоединении'
             }
         ]
     },
@@ -78,7 +88,7 @@ export const documentsData = [
             },
             {
                 id: 3,
-                href: require('../../assets/docs/lokalnie/положение-оплаты-труда.pdf'),
+                href: require('../../assets/docs/lokalnie/положение-об-оплате-труда.pdf'),
                 text: 'Положение  об оплате труда'
             },
             {
@@ -118,8 +128,23 @@ export const documentsData = [
             },
             {
                 id: 11,
-                href: require('../../assets/docs/lokalnie/кодекс-этики.pdf'),
+                href: require('../../assets/docs/lokalnie/кодекс-этики.docx'),
                 text: 'Кодекс этики'
+            },
+            {
+                id: 12,
+                href: require('../../assets/docs/lokalnie/приказ-кодекс-этики-2022.pdf'),
+                text: 'Приказ кодекс этики'
+            },
+            {
+                id: 13,
+                href: require('../../assets/docs/lokalnie/положение-об-обработке-персональных-данных-2022.docx'),
+                text: 'Положение об обработке персональных данных'
+            },
+            {
+                id: 14,
+                href: require('../../assets/docs/lokalnie/структура.pdf'),
+                text: 'Структура МБУК ДК "Звёздный"'
             }
         ]
     },
@@ -131,13 +156,58 @@ export const documentsData = [
             {
                 id: 1,
                 href: require('../../assets/docs/methodic/estrada-vocal.pdf'),
-                text: 'Методическая разработка мастер-класса по эстрадному вокалу'
+                text: 'Методическая разработка мастер-класса по эстрадному вокалу на тему: "Работа над вокально-техническими навыками" для детей от 7-14 лет'
             },
             {
                 id: 2,
                 href: require('../../assets/docs/methodic/narodniy-vocal.pdf'),
-                text: 'Методическая разработка мастер – класса по народному вокалу'
+                text: 'Методическая разработка мастер – класса по народному вокалу на тему: «Работа над формированием народно – певческих навыков с помощью вокальных упражнений»'
             },
+            {
+                id: 3,
+                href: require('../../assets/docs/methodic/rodnaya-pesnya.docx'),
+                text: 'Методическая разработка мастер-класса по народному пению для детей от 6-12 лет'
+            },
+            {
+                id: 4,
+                href: require('../../assets/docs/methodic/art-studiya.docx'),
+                text: 'Методическая разработка мастер-класса по изобразительному искусству на тему: "Акварельные мотивы" для детей от 7-15 лет'
+            },
+            {
+                id: 5,
+                href: require('../../assets/docs/methodic/raduga-duga.docx'),
+                text: 'Методическая разработка мастер-класса по изобразительному искусству на тему: "Подарок бабушке - матрешка" для детей от 7-14 лет'
+            },
+            {
+                id: 6,
+                href: require('../../assets/docs/methodic/arlekin-plus.docx'),
+                text: 'Методическая разработка открытого занятия театрального кружка «Арлекин+» на тему: "Весь мир театр" для детей от 7 -14'
+            },
+            {
+                id: 7,
+                href: require('../../assets/docs/methodic/arlekin.docx'),
+                text: 'Методическая разработка открытого занятия кукольного кружка «Арлекин» на тему: "Обучение навыкам кукловождения" для детей от 7 -14'
+            },
+            {
+                id: 8,
+                href: require('../../assets/docs/methodic/maska.docx'),
+                text: 'Методическая разработка мастер-класса по театральному искусству для детей от 12-18 лет'
+            },
+            {
+                id: 9,
+                href: require('../../assets/docs/methodic/na-bis.docx'),
+                text: 'Методическая разработка открытого занятия для детей 7- 12 лет, посвященного Международному дню цирка'
+            },
+            {
+                id: 10,
+                href: require('../../assets/docs/methodic/rostochek.docx'),
+                text: 'Методическая разработка мастер-класса по современной хореографии на тему: "Формирование знаний и демонстрация навыков» от 10-14 лет'
+            },
+            {
+                id: 11,
+                href: require('../../assets/docs/methodic/sorvanci.docx'),
+                text: 'Методическая разработка мастер-класса в театральном коллективе «Сорванцы»'
+            }
         ]
     },
     {
@@ -184,26 +254,36 @@ export const documentsData = [
             },
             {
                 id: 1,
+                href: require('../../assets/docs/municipal/МЗ-2021-отчёт.pdf'),
+                text: 'Муниципальное задание на 2021 год'
+            },
+            {
+                id: 2,
+                href: require('../../assets/docs/municipal/МЗ-2020.pdf'),
+                text: 'Муниципальное задание на 2020 год'
+            },
+            {
+                id: 3,
                 href: require('../../assets/docs/municipal/МЗ-2019.pdf'),
                 text: 'Муниципальное задание на 2019 год'
             },
             {
-                id: 2,
+                id: 4,
                 href: require('../../assets/docs/municipal/МЗ-2018-выполнение-работ.pdf'),
                 text: 'Муниципальное задание на выполнение работ за 2018 год'
             },
             {
-                id: 3,
+                id: 5,
                 href: require('../../assets/docs/municipal/МЗ-2018-оказание-услуг.pdf'),
                 text: 'Муниципальное задание на оказание услуг за 2018 год'
             },
             {
-                id: 4,
+                id: 6,
                 href: require('../../assets/docs/municipal/МЗ-2017-выполнение-работ.pdf'),
                 text: 'Муниципальное задание на выполнение работ за 2017 год'
             },
             {
-                id: 5,
+                id: 7,
                 href: require('../../assets/docs/municipal/МЗ-2017-оказание-услуг.pdf'),
                 text: 'Муниципальное задание на оказание услуг за 2017 год'
             }
@@ -239,29 +319,61 @@ export const documentsData = [
         isDrop: true,
         drop: [
             {
+                id: 0,
+                href: require('../../assets/docs/coruption/план-против-коррупции-2023.pdf'),
+                text: 'План мероприятий по противодействию коррупции на 2023 год'
+            },
+            {
                 id: 1,
-                href: require('../../assets/docs/coruption/план-против-коррупции-2021.pdf'),
-                text: 'План мероприятий по противодействию коррупции на 2021 год'
-            },
-            {
-                id: 2,
-                href: require('../../assets/docs/coruption/отчёт-кор-1-2021.pdf'),
-                text: 'Отчёт о работе по противодействию коррупции за 1 квартал 2021 год'
-            },
-            {
-                id: 3,
-                href: require('../../assets/docs/coruption/Отчет-за-1-полугодие2021.pdf'),
-                text: 'Отчёт о работе по противодействию коррупции за 1 полугодие 2021 год'
-            },
-            {
-                id: 4,
                 href: require('../../assets/docs/coruption/план-против-коррупции-2022.pdf'),
                 text: 'План мероприятий по противодействию коррупции на 2022 год'
             },
             {
-                id: 5,
+                id: 2,
                 href: require('../../assets/docs/coruption/Отчет-за-1-полугодие-2022.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 1 полугодие 2022 год'
+            },
+            {
+                id: 3,
+                href: require('../../assets/docs/coruption/план-против-коррупции-2021.pdf'),
+                text: 'План мероприятий по противодействию коррупции на 2021 год'
+            },
+            {
+                id: 4,
+                href: require('../../assets/docs/coruption/о-противодействию-к-2021.pdf'),
+                text: 'Отчёт о работе по противодействию коррупции за 2021 год'
+            },
+            {
+                id: 5,
+                href: require('../../assets/docs/coruption/о-противодейстивию-к-2020.pdf'),
+                text: 'Отчёт о работе по противодействию коррупции за 2020 год'
+            },
+            {
+                id: 6,
+                href: require('../../assets/docs/coruption/о-противодейтсвия-к-2019.pdf'),
+                text: 'Отчёт о работе по противодействию коррупции за 2019 год'
+            },
+            {
+                id: 7,
+                href: require('../../assets/docs/coruption/о-противодействия-к-2018.pdf'),
+                text: 'Отчёт о работе по противодействию коррупции за 2018 год'
+            },
+            {
+                id: 8,
+                href: require('../../assets/docs/coruption/Pamyatka_Chto_nyzhno_znat_o_korrupcii.pdf'),
+                text: 'Памятка (Что нужно знать о коррупции)'
+            }
+        ]
+    },
+    {
+        id: 9,
+        text: 'Независимая оценка качества',
+        isDrop: true,
+        drop: [
+            {
+                id: 0,
+                href: require('../../assets/docs/ocenka/ocenka.pdf'),
+                text: 'Отчёт по результатам независимой оценке качества 2020'
             }
         ]
     }

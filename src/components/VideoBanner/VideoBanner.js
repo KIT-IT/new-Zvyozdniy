@@ -1,5 +1,5 @@
 import React from 'react'
-import video from '../../assets/video/video-2.2.mp4'
+import video from '../../assets/video/main-baner.mp4'
 
 function VideoBanner() {
   return (

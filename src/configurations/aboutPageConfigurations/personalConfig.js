@@ -1,7 +1,7 @@
 export const personalData = [
     {
         id: 1,
-        src: require('../../assets/images/pesonalPhoto/nadejda-matveeva.jpg'),
+        src: require('../../assets/images/pesonalPhoto/nadejda-matveeva.JPG'),
         name: 'Матвеева Надежда Владимировна',
         position: 'Директор'
     },
@@ -19,9 +19,9 @@ export const personalData = [
     },
     {
         id: 4,
-        src: require('../../assets/images/pesonalPhoto/elena-miroshnichenko.jpg'),
-        name: 'Мирошниченко Елена Сергеевна',
-        position: 'Заведующий отдела по работе клубных формирований'
+        src: require('../../assets/images/pesonalPhoto/vika-maley.JPG'),
+        name: 'Вещева Виктория Степановна',
+        position: 'Методист'
     },
     {
         id: 5,
@@ -34,5 +34,23 @@ export const personalData = [
         src: require('../../assets/images/pesonalPhoto/RomanchevaMadina.jpg'),
         name: 'Романчева Мадина Омаросхабовна',
         position: 'Режиссёр - постановщик массовых мероприятий'
+    },
+    {
+        id: 7,
+        src: require('../../assets/images/pesonalPhoto/malisheva-natalia.JPG'),
+        name: 'Малышева Наталья Евгеньевна',
+        position: 'Методист'
+    },
+    {
+        id: 8,
+        src: require('../../assets/images/pesonalPhoto/ivanova-natalia.JPG'),
+        name: 'Иванова Наталья Ивановна',
+        position: 'Библиотекарь филиала №3 Краснопахорской библиотечной системы, с.Былово, дом 8А'
+    },
+    {
+        id: 9,
+        src: require('../../assets/images/pesonalPhoto/goryachkina-olga.JPG'),
+        name: 'Горячкина Ольга Антоновна',
+        position: 'Библиотекарь детского отделения филиала №2 Краснопахорской библиотечной системы'
     }
 ]

@@ -95,3 +95,32 @@
         &_text {}
     }
 }
+
+.contacts-uchred {
+    background: #f6f6f6;
+    &__body {}
+    &__title {
+        padding-top: 50px;
+        font-size: 30px;
+        @media (max-width: $md3 + 'px') {
+            padding-top: 30px;
+        }
+    }
+    &__info {
+        padding: 20px 0;
+        padding-bottom: 50px;
+        @media (max-width: $md3 + 'px') {
+            padding-bottom: 30px;
+        }
+    }
+    &__info-block {
+        padding: 10px 0;
+        &_title {
+            font-weight: bold;
+        }
+        &_info {
+            color: #000;
+            font-size: 16px;
+        }
+    }
+}
