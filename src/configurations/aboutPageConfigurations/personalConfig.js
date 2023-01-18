@@ -1,7 +1,7 @@
 export const personalData = [
     {
         id: 1,
-        src: require('../../assets/images/pesonalPhoto/nadejda-matveeva.JPG'),
+        src: require('../../assets/images/pesonalPhoto/nadejda-matveeva.jpg'),
         name: 'Матвеева Надежда Владимировна',
         position: 'Директор'
     },
