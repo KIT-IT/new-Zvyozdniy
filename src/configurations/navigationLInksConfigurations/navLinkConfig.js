@@ -122,13 +122,4 @@ export const navList  = [
         isDrop: false,
         drop: []
     },
-    {
-        type: 'tinao',
-        id: 6,
-        to: '/tinao',
-        text: '10 лет ТиНАО',
-        isIcon: false,
-        isDrop: false,
-        drop: []
-    }
 ]

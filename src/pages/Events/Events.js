@@ -23,7 +23,7 @@ function Events({month}) {
     })
 
     const [currentPage, setCurrentPage] = useState(1)
-    const [postsPerPage] = useState(8)
+    const [postsPerPage] = useState(12)
     const indexOfLastPost = currentPage * postsPerPage
     const indexOfFirstPost = indexOfLastPost - postsPerPage
     const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost)
