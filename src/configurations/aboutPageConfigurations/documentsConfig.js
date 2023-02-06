@@ -249,41 +249,46 @@ export const documentsData = [
         drop: [
             {
                 id: 0,
+                href: require('../../assets/docs/municipal/МЗ-2023.pdf'),
+                text: 'Муниципальное задание на 2023 год'
+            },
+            {
+                id: 1,
                 href: require('../../assets/docs/municipal/МЗ-2022.pdf'),
                 text: 'Муниципальное задание на 2022 год'
             },
             {
-                id: 1,
+                id: 2,
                 href: require('../../assets/docs/municipal/МЗ-2021-отчёт.pdf'),
                 text: 'Муниципальное задание на 2021 год'
             },
             {
-                id: 2,
+                id: 3,
                 href: require('../../assets/docs/municipal/МЗ-2020.pdf'),
                 text: 'Муниципальное задание на 2020 год'
             },
             {
-                id: 3,
+                id: 4,
                 href: require('../../assets/docs/municipal/МЗ-2019.pdf'),
                 text: 'Муниципальное задание на 2019 год'
             },
             {
-                id: 4,
+                id: 5,
                 href: require('../../assets/docs/municipal/МЗ-2018-выполнение-работ.pdf'),
                 text: 'Муниципальное задание на выполнение работ за 2018 год'
             },
             {
-                id: 5,
+                id: 6,
                 href: require('../../assets/docs/municipal/МЗ-2018-оказание-услуг.pdf'),
                 text: 'Муниципальное задание на оказание услуг за 2018 год'
             },
             {
-                id: 6,
+                id: 7,
                 href: require('../../assets/docs/municipal/МЗ-2017-выполнение-работ.pdf'),
                 text: 'Муниципальное задание на выполнение работ за 2017 год'
             },
             {
-                id: 7,
+                id: 8,
                 href: require('../../assets/docs/municipal/МЗ-2017-оказание-услуг.pdf'),
                 text: 'Муниципальное задание на оказание услуг за 2017 год'
             }

@@ -1,5 +1,17 @@
 export const eventsConfig = [
     {
+        id: 22,
+        eventDay: 'ПТ',
+        eventDayNumber: '17',
+        eventInfoDate: '17 февраля',
+        eventInfoTitle: 'Мастер - класс "Письмо солдату"',
+        eventPlace: 'ДК Звёздный',
+        eventDescription: '17 февраля пройдёт творческий мастер - класс "Письмо солдату" в доме культуры "Звёздный" ',
+        eventCost: 'Бесплатно',
+        eventImgSrc: require('../../assets/images/eventsImages/mk-pismo-01.jpg'),
+        eventsPreviewImg: require('../../assets/images/eventsImages/eventsPreviewImgs/mk-pismo-02.jpg'),
+    },
+    {
         id: 21,
         eventDay: 'ВТ',
         eventDayNumber: '14',
@@ -10,6 +22,18 @@ export const eventsConfig = [
         eventCost: 'Бесплатно',
         eventImgSrc: require('../../assets/images/eventsImages/knigi-01.jpg'),
         eventsPreviewImg: require('../../assets/images/eventsImages/eventsPreviewImgs/knigi-02.jpg'),
+    },
+    {
+        id: 20,
+        eventDay: 'ПТ',
+        eventDayNumber: '13',
+        eventInfoDate: 'с 13 по 25 февраля',
+        eventInfoTitle: 'Фотовыставка онлайн',
+        eventPlace: 'Онлайн',
+        eventDescription: '15 февраля - ежегодный день памяти россиян, исполнявших свой служебный долг за пределами Отечества. В память о воинах-интернационалистах с 13 по 25 февраля в социальных сетях ДК "Звёздный" пройдёт фотовыставка. В экспозиции будут представлены снимки фотографа ДК "Звёздный" Инны Чистовой. Это репортажи с торжественных мероприятий на территории поселения Краснопахорское. В фотоподборке можно будет увидеть моменты установки и открытия мемориала воинам -интернационалистам, а также фотографии с митингов, в которых принимали участие ветераны военных действий, почётные гости и местные жители.',
+        eventCost: 'Бесплатно',
+        eventImgSrc: require('../../assets/images/eventsImages/voin-01.jpg'),
+        eventsPreviewImg: require('../../assets/images/eventsImages/eventsPreviewImgs/voin-02.jpg'),
     },
     {
         id: 19,
