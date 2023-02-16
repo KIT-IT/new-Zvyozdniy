@@ -19,7 +19,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Март',
     age: '4 +',
-    href: require('../../assets/docs/festivals/Семёновна-2022.doc')
+    href: require('../../assets/docs/festivals/Семёновна-2023.doc')
   },
   {
     id: 2,

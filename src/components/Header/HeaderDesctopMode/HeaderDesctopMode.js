@@ -24,6 +24,9 @@ function HeaderDesctopMode() {
                     <img className="header-info-logo__img" src={zvzLogo} alt="logo-zvz"/>
                 </Link>
               </div>
+              <div className="header-info-logo">
+              < span className="header-info-forms__logotext"> ДК ЗВЕЗДНЫЙ </span>
+              </div>
               <SearchingInput />
               <div className="header-info-contacts">
                 <div className="info-glasses" onClick={handleVisualImpairedMode}>
