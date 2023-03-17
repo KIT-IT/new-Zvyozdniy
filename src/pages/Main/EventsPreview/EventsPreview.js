@@ -28,6 +28,7 @@ function EventsPreview() {
     })
 
 
+
     return (
         <div className="events-preview _container">
             <div className="events-preview__body">
