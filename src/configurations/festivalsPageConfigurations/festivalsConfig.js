@@ -1,16 +1,5 @@
 export const festivalsConfig = [
   {
-    id: 0,
-    title: 'Театральный фестиваль',
-    name: 'Красная линия',
-    info: 'Театральный фестиваль «Красная линия» любительских коллективов учреждений культуры города Москвы и соседних регионов проводится с 2010 года, ежегодно. Фестиваль приурочен к Дню театра и проводится в марте.',
-    backgroundImage: require('../../assets/images/festivalsImages/Pushkin.jpg'),
-    place: 'ДК Звёздный',
-    date: 'Март',
-    age: '5 +',
-    href: require('../../assets/docs/festivals/RedLine2023.docx')
-  },
-  {
     id: 1,
     title: 'Фестиваль художественного слова',
     name: 'Золотые слова Пушкина',
@@ -31,6 +20,17 @@ export const festivalsConfig = [
     date: 'Март',
     age: '4 +',
     href: require('../../assets/docs/festivals/Семёновна-2023.doc')
+  },
+  {
+    id: 3,
+    title: 'Театральный фестиваль',
+    name: 'Красная линия',
+    info: 'Театральный фестиваль «Красная линия» любительских коллективов учреждений культуры города Москвы и соседних регионов проводится с 2010 года, ежегодно. Фестиваль приурочен к Дню театра и проводится в марте.',
+    backgroundImage: require('../../assets/images/festivalsImages/red-line-Fest.jpg'),
+    place: 'ДК Звёздный',
+    date: 'Март',
+    age: '5 +',
+    href: require('../../assets/docs/festivals/RedLine2023.docx')
   },
   {
     id: 4,

@@ -207,36 +207,39 @@ export const documentsData = [
                 id: 11,
                 href: require('../../assets/docs/methodic/sorvanci.docx'),
                 text: 'Методическая разработка мастер-класса в театральном коллективе «Сорванцы»'
-            }
-        ]
-    },
-    {
-        id: 4,
-        text: 'Финансово-хозяйственная Деятельность',
-        isDrop: true,
-        drop: [
+            },
             {
-                id: 0,
+                id: 12,
+                href: require('../../assets/docs/methodic/sunset-point.docx'),
+                text: 'Методическая разработка мастер-класса в театральном коллективе «sunset-point»'
+            },
+            {
+                id: 1,
+                href: require('../../assets/docs/pfhd/ПФХД-2023.pdf'),
+                text: 'План финансово-хозяйственной деятельности на 2023 год'
+            },
+            {
+                id: 2,
                 href: require('../../assets/docs/pfhd/ПФХД-2022.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2022 год'
             },
             {
-                id: 1,
+                id: 3,
                 href: require('../../assets/docs/pfhd/ПФХД-2021.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2021 год'
             },
             {
-                id: 2,
+                id: 4,
                 href: require('../../assets/docs/pfhd/ПФХД-2020.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2020 год'
             },
             {
-                id: 3,
+                id: 5,
                 href: require('../../assets/docs/pfhd/ПФХД-2019.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2019 год'
             },
             {
-                id: 4,
+                id: 6,
                 href: require('../../assets/docs/pfhd/ПФХД-2018.pdf'),
                 text: 'План финансово-хозяйственной деятельности на 2018 год'
             }
@@ -325,46 +328,51 @@ export const documentsData = [
         drop: [
             {
                 id: 0,
+                href: require('../../assets/docs/coruption/план-о-корупции-2023.pdf'),
+                text: 'Отчет о работе по противодействию коррупции за 1 квартал 2023 год'
+            },
+            {
+                id: 1,
                 href: require('../../assets/docs/coruption/план-против-коррупции-2023.pdf'),
                 text: 'План мероприятий по противодействию коррупции на 2023 год'
             },
             {
-                id: 1,
+                id: 2,
                 href: require('../../assets/docs/coruption/план-против-коррупции-2022.pdf'),
                 text: 'План мероприятий по противодействию коррупции на 2022 год'
             },
             {
-                id: 2,
+                id: 3,
                 href: require('../../assets/docs/coruption/Отчет-за-1-полугодие-2022.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 1 полугодие 2022 год'
             },
             {
-                id: 3,
+                id: 4,
                 href: require('../../assets/docs/coruption/план-против-коррупции-2021.pdf'),
                 text: 'План мероприятий по противодействию коррупции на 2021 год'
             },
             {
-                id: 4,
+                id: 5,
                 href: require('../../assets/docs/coruption/о-противодействию-к-2021.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 2021 год'
             },
             {
-                id: 5,
+                id: 6,
                 href: require('../../assets/docs/coruption/о-противодейстивию-к-2020.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 2020 год'
             },
             {
-                id: 6,
+                id: 7,
                 href: require('../../assets/docs/coruption/о-противодейтсвия-к-2019.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 2019 год'
             },
             {
-                id: 7,
+                id: 8,
                 href: require('../../assets/docs/coruption/о-противодействия-к-2018.pdf'),
                 text: 'Отчёт о работе по противодействию коррупции за 2018 год'
             },
             {
-                id: 8,
+                id: 9,
                 href: require('../../assets/docs/coruption/Pamyatka_Chto_nyzhno_znat_o_korrupcii.pdf'),
                 text: 'Памятка (Что нужно знать о коррупции)'
             }
