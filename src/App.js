@@ -108,7 +108,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/events/"><Events month="Март - Апрель"/></Route>
+            <Route path="/events/"><Events month="Апрель - Май"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
 
             <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>

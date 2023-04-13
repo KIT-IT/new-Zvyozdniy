@@ -52,7 +52,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Апрель',
     age: '0 +',
-    href: require('../../assets/docs/festivals/Поющий-май.docx')
+    href: require('../../assets/docs/festivals/Поющий май 2023.docx')
   },
   {
     id: 6,
