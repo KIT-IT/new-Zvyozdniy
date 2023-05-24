@@ -19,7 +19,7 @@ function Clubs() {
         )
     })
 
-    const href = require('../../assets/docs/clubs-shedule-02.pdf')
+    const href = require('../../assets/docs/clubs-shedule-2023.pdf')
 
     return (
         <div className="clubs wrapper">

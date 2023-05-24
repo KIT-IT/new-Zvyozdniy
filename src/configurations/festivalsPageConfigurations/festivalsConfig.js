@@ -63,7 +63,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Май',
     age: '4 +',
-    href: require('../../assets/docs/festivals/Содружество-2022.docx')
+    href: require('../../assets/docs/festivals/Содружество 2023.docx')
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Июнь',
     age: '3 +',
-    href: require('../../assets/docs/festivals/Модное-детство-2022.docx')
+    href: require('../../assets/docs/festivals/Модное детство 2023.docx')
   },
   {
     id: 9,
