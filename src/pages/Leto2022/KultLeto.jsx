@@ -27,7 +27,7 @@ function Kultleto() {
       <div className="kult__body">
         <div className="kult-info _container">
           <div className="kult-info__title">
-            <h2 className="kult-info__title_text">КУЛЬТЛЕТО 2022</h2>
+            <h2 className="kult-info__title_text">КУЛЬТЛЕТО 2023</h2>
           </div>
           <div className="kult-info__subscribe">
             <span className="kult-info__subscribe_text">КУЛЬТЛЕТО – это интенсивные программы, рассчитанные на 1 час. Каждая программа уникальна тем, что ребята за короткий отрезок времени осваивают новые навыки, которые в дальнейшем смогут закрепить на занятиях в клубных формированиях домов культуры «Звёздный» и «Юбилейный» в новом творческом сезоне.</span>
@@ -50,7 +50,7 @@ function Kultleto() {
             </div>
             <div className="kult-signUp-button">
               <div className="kult-signUp-button__body button">
-                <a className="kult-signUp-button__body_link" href='https://forms.gle/bnBnfR4VRPbDUMid9' target="_blank" rel="noopener noreferrer">
+                <a className="kult-signUp-button__body_link" href='https://docs.google.com/forms/d/e/1FAIpQLScWqpwt7K-k5Ir55PAtiEMkrqWRBTGefNNZAPHf2JtaE96xNQ/viewform' target="_blank" rel="noopener noreferrer">
                   <span className="kult-signUp-button__body_text">Запись</span>
                 </a>
               </div>
