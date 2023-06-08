@@ -138,7 +138,7 @@ export const navList  = [
             {
                 id: 16,
                 to: '/ltl/',
-                text: 'ЛТЛ 2022'
+                text: 'ЛТЛ 2023'
             }
         ]
     },
