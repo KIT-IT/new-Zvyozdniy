@@ -155,6 +155,11 @@ export const documentsData = [
         drop: [
             {
                 id: 1,
+                href: require('../../assets/docs/methodic/Gridin.docx'),
+                text: '«Методическая разработка мастер-класса по фланкировке казачьей шашкой'
+            },
+            {
+                id: 1,
                 href: require('../../assets/docs/methodic/xor.docx'),
                 text: '«Методика обучения искусству народного пения участников коллектива» Руководителя Хора русской песни Асвадуровой Ирины Геннадьевны'
             },
