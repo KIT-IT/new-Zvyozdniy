@@ -107,7 +107,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Октябрь',
     age: '5 +',
-    href: require('../../assets/docs/festivals/Серебряная-осень-2021.docx')
+    href: require('../../assets/docs/festivals/Серебряная осень 2023.docx')
   },
   {
     id: 11,
