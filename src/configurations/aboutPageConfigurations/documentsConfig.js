@@ -316,6 +316,11 @@ export const documentsData = [
                 id: 1,
                 href: require('../../assets/docs/lokalnie/виды-деятельности.pdf'),
                 text: 'Виды деятельности'
+            },
+            {
+                id: 2,
+                href: require('../../assets/docs/lokalnie/ОТЧЕТ СОУТ.pdf'),
+                text: 'СОУТ'
             }
         ]
     },
