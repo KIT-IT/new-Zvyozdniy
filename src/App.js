@@ -112,7 +112,7 @@ function App() {
               />
             </Route>
 
-            <Route path="/events/"><Events month="ноябрь"/></Route>
+            <Route path="/events/"><Events month="январь"/></Route>
             <Route path="/clubs/" exact component={Clubs}/>
 
             <Route path="/clubs/early-development/"><ClubsList clubsList={earlyDevelopmentClubs} title={"Раннее развитие"} abbreviated={"Раннее развитие"}/></Route>
@@ -129,11 +129,11 @@ function App() {
 
             <Route path="/clubs/moscow-longevity/"><ClubsList clubsList={longevityClubs} title={"Московское долголетие"} abbreviated={"Московское долголетие"}/></Route>
 
-            <Route path="/main-leto/" component={Leto}></Route>
+            {/* <Route path="/main-leto/" component={Leto}></Route>
 
             <Route path="/ltl/" component={Ltl}></Route>
 
-            <Route path="/kult-leto/" component={Kultleto}></Route>
+            <Route path="/kult-leto/" component={Kultleto}></Route> */}
 
             <Route path="*" component={NoMatch} />
         </Switch>

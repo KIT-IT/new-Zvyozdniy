@@ -52,5 +52,11 @@ export const personalData = [
         src: require('../../assets/images/pesonalPhoto/goryachkina-olga.JPG'),
         name: 'Горячкина Ольга Антоновна',
         position: 'Библиотекарь детского отделения филиала №2 Краснопахорской библиотечной системы'
+    },
+    {
+        id: 10,
+        src: require('../../assets/images/pesonalPhoto/elena-miroshnichenko.jpg'),
+        name: 'Мирошниченко Елена Сергеевна',
+        position: 'Заведующий музейного отдела'
     }
 ]

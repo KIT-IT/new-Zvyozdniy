@@ -12,11 +12,5 @@ export const linksConfig = [
         to: 'https://t.me/dkzvyozdniy',
         icon: faTelegram,
         color: '#31a7db'
-    },
-    {
-        key: 3,
-        to: 'https://www.youtube.com/channel/UCZhb3VQXiD8S7fDOZ5vbBbg',
-        icon: faYoutube,
-        color: '#FF0000'
     }
 ]
