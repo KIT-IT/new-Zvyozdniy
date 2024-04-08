@@ -26,6 +26,11 @@ export const navList  = [
                 id: 4,
                 to: '/questions/',
                 text: 'Часто Задоваемые Вопросы'
+            },
+            {
+                id: 5,
+                to: '/questions/',
+                text: 'О Многофункциональном визит – центре'
             }
         ]
     },
