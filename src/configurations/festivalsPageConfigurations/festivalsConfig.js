@@ -52,7 +52,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Апрель',
     age: '0 +',
-    href: require('../../assets/docs/festivals/Поющий май 2023.docx')
+    href: require('../../assets/docs/festivals/Положение Поющий май 2024.pdf')
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ export const festivalsConfig = [
     place: 'Парк Победы',
     date: 'Июнь',
     age: '4 +',
-    href: require('../../assets/docs/festivals/Троицкие-гуляния.docx')
+    href: require('../../assets/docs/festivals/Положение Троица 2024.docx')
   },  
   {
     id: 8,
