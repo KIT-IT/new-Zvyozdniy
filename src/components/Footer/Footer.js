@@ -55,7 +55,7 @@ function Footer() {
                                 <a className="footer-nav__item_link" href="tel:+74958508053">+7 (495) 850-80-53</a>
                             </li>
                             <li className="footer-nav__item">
-                                <p className="footer-nav__item_link">108828 г.Москва, п.Краснопахорское, с.Красная Пахра, ул.Заводская, д.20</p>
+                                <p className="footer-nav__item_link">108828 г.Москва, р-н. Краснопахорский, с.Красная Пахра, ул.Заводская, д.20</p>
                                 <a className="footer-nav__item_link" href="mailto:zvezdnii45@list.ru">zvezdnii45@list.ru</a>
                             </li>
                             <li className="footer-nav__item">
@@ -74,7 +74,7 @@ function Footer() {
                         </div>
                         <div className="footer-copyright-section">
                             <div className="footer-copyright-section__body">
-                                <p className="footer-copyright-section__text">© 2000-{year} МБУК ДК Звёздный</p>
+                                <p className="footer-copyright-section__text">© 2000-{year} ГБУ «ЦДС ТиНАО» СП «Дом культуры «Звездный»</p>
                             </div>
                         </div>
                     </div>

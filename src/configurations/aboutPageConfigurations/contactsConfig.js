@@ -4,18 +4,18 @@ import React from "react";
 
 export const zvyozdniyCultureCenter = {
     id: 1,
-    title: 'Муниципальное Бюджетное Учреждение Культуры Дом Культуры "Звёздный"',
+    title: 'ГБУ «ЦДС ТиНАО» СП «Дом культуры «Звездный»',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3Aca072e9bdf2f728de508ecd73657a748accc0f09ac4e55ffa1f1b5a0c0b71f6a&amp;source=constructor',
-    address: '108828, Москва, п.Краснопахорское, с.Красная Пахра, ул.Заводская, д.20',
+    address: '108828, Москва, р-н. Краснопахорский, с.Красная Пахра, ул.Заводская, д. 20',
     worktime: 'Ежедневно с 08.00 до 22.00 без перерыва на обед',
     phone: '+7 (495)850-80-53',
 }
 
 export const bilovoCultureCenter = {
     id: 2,
-    title: 'Обособленное структурное подразделение Дом Культуры "Юбилейный"',
+    title: 'ГБУ «ЦДС ТиНАО» СП «Дом культуры «Звездный»',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5b325c639a59be61ec6758462146451a35a1dfdd0a54c138d09e4264d58aa6d8&amp;source=constructor',
-    address: '108828, Москва, с.Былово, д.8-а',
+    address: '108828, Москва, с. Былово, д. 8-а',
     worktime: 'Ежедневно с 10.00 до 20.00 без перерыва на обед',
     phone: '+7 (495) 849-34-85',
 }
@@ -33,7 +33,7 @@ export const pahraLibraryContacts = {
     id: 4,
     title: 'Библиотека Красная Пахра',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5e32a382f60a3445ac2e29d47650ea9798e68cbe3a24314960781549af94f9af&amp;source=constructor',
-    address: '108828, Москва, п.Краснопахорское, с.Красная Пахра, ул.Почтовая, д.5',
+    address: '108828, Москва, р-н. Краснопахорский, с.Красная Пахра, ул. Почтовая, д.5',
     worktime: 'c 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 849-32-35'
 }
@@ -42,7 +42,7 @@ export const pahraKidsLibraryContacts = {
     id: 4,
     title: 'Библиотека Красная Пахра Детская ',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A5e32a382f60a3445ac2e29d47650ea9798e68cbe3a24314960781549af94f9af&amp;source=constructor',
-    address: '108828, Москва, п.Краснопахорское, с.Красная Пахра, ул.Почтовая, д.5',
+    address: '108828, Москва, р-н. Краснопахорский, с. Красная Пахра, ул. Почтовая, д.5',
     worktime: 'c 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 849-32-25'
 }
@@ -51,7 +51,7 @@ export const minzagLibraryContacts = {
     id: 5,
     title: 'Библиотека Минзаг',
     srcToMap: 'https://yandex.ru/map-widget/v1/?um=constructor%3A7608b4e8c85656e4d3cdefc79af4824895cebb0d1369ab9837a3b92130890ea7&amp;source=constructor',
-    address: 'Москва, поселение Краснопахорское, поселок Минзаг, дом 2, цокольный этаж',
+    address: 'Москва, р-н. Краснопахорский, поселок Минзаг, дом 2, цокольный этаж',
     worktime: 'с 11-00 до 18-00 Воскресенье, понедельник - выходные дни, последний рабочий день месяца – санитарный день',
     phone: '+7 (495) 592-47-39'
 }
@@ -76,7 +76,7 @@ export const contactsSwitchListConfig = [
 
     {
         key: 3,
-        name: 'ДК Юбилейный',
+        name: 'ДК Звёздный с. Былово',
         fun: <ContactsItem title={bilovoCultureCenter.title} srcToMap={bilovoCultureCenter.srcToMap} address={bilovoCultureCenter.address} worktime={bilovoCultureCenter.worktime} phone={bilovoCultureCenter.phone}/>
     },
     {

@@ -19,7 +19,7 @@ function Clubs() {
         )
     })
 
-    const href = require('../../assets/docs/clubs-shedule-2024.pdf')
+    const href = require('../../assets/docs/clubs-shedule-2024-2.pdf')
 
     return (
         <div className="clubs wrapper">
@@ -33,7 +33,7 @@ function Clubs() {
                 <h1 className="_subtitle">Направления</h1>
                 <div className="clubs-links">
                 <div className="clubs-shedule">
-                    <div className="clubs-shedule__title">Расписание занятий</div>
+                    <div className="clubs-shedule__title">Актуальное расписание на творческий сезон 2024-2025</div>
                     <div className="clubs-shedule__document button">
                         <a 
                             className="clubs-shedule__document_link"  

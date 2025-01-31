@@ -1,62 +1,45 @@
 export const personalData = [
+
     {
         id: 1,
-        src: require('../../assets/images/pesonalPhoto/nadejda-matveeva.jpg'),
-        name: 'Матвеева Надежда Владимировна',
-        position: 'Директор'
-    },
-    {
-        id: 2,
         src: require('../../assets/images/pesonalPhoto/kate-goremikina.jpg'),
         name: 'Горемыкина Екатерина Евгеньевна',
-        position: 'Заместитель директора'
+        position: 'Руководитель структурного подразделения'
     },
     {
         id: 3,
         src: require('../../assets/images/pesonalPhoto/lena-mihailina.jpg'),
         name: 'Михайлина Елена Ивановна',
-        position: 'Заместитель директора по культурно-досуговой деятельности'
+        position: 'Заместитель руководителя структурного подразделения'
     },
     {
         id: 4,
         src: require('../../assets/images/pesonalPhoto/vika-maley.JPG'),
         name: 'Вещева Виктория Степановна',
-        position: 'Методист'
+        position: 'Заведующий сектором (по работе клубных формирований)'
     },
     {
         id: 5,
         src: require('../../assets/images/pesonalPhoto/lyudmila-abramova.jpg'),
         name: 'Абрамова Людмила Александровна',
-        position: 'Заведующий библиотечного отдела'
+        position: 'Заведующий сектором (библиотека)'
     },
     {
         id: 6,
         src: require('../../assets/images/pesonalPhoto/RomanchevaMadina.jpg'),
         name: 'Романчева Мадина Омаросхабовна',
-        position: 'Режиссёр - постановщик массовых мероприятий'
-    },
-    {
-        id: 7,
-        src: require('../../assets/images/pesonalPhoto/malisheva-natalia.JPG'),
-        name: 'Малышева Наталья Евгеньевна',
-        position: 'Методист'
-    },
-    {
-        id: 8,
-        src: require('../../assets/images/pesonalPhoto/ivanova-natalia.JPG'),
-        name: 'Иванова Наталья Ивановна',
-        position: 'Библиотекарь филиала №3 Краснопахорской библиотечной системы, с.Былово, дом 8А'
+        position: 'Режиссёр - массовых представлений'
     },
     {
         id: 9,
         src: require('../../assets/images/pesonalPhoto/goryachkina-olga.JPG'),
         name: 'Горячкина Ольга Антоновна',
-        position: 'Библиотекарь детского отделения филиала №2 Краснопахорской библиотечной системы'
+        position: 'Библиотекарь'
     },
     {
         id: 10,
         src: require('../../assets/images/pesonalPhoto/elena-miroshnichenko.jpg'),
         name: 'Мирошниченко Елена Сергеевна',
-        position: 'Заведующий музейного отдела'
+        position: 'Заведующий сектором (музей)'
     }
 ]

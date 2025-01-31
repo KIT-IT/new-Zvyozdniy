@@ -19,7 +19,7 @@ function HeaderMediaSection() {
                         </div>
                         <div className="info-location">
                             <FontAwesomeIcon className='header-icon element-with-changing-styles' icon={faMapMarkerAlt} />
-                            <p className="info-location__link">108828 г.Москва, п.Краснопахорское, с.Красная Пахра, ул.Заводская, д.20</p>
+                            <p className="info-location__link">108828 г.Москва, р-н.Краснопахорский, с.Красная Пахра, ул.Заводская, д.20</p>
                         </div>
                         <div className="info-mail">
                             <FontAwesomeIcon className='header-icon element-with-changing-styles' icon={faEnvelope} />

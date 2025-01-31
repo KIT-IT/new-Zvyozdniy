@@ -1,6 +1,6 @@
 import React from 'react'
 //import video from '../../assets/images/aboutPageImages/about-content-1.jpeg'
-import video from '../../assets/video/video-2.2.mp4'
+import video from '../../assets/video/DKZV.mp4'
 
 function VideoBanner() {
   return (

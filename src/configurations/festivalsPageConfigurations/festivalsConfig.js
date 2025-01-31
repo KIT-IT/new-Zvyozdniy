@@ -8,7 +8,7 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Февраль',
     age: '5 +',
-    href: require('../../assets/docs/festivals/положение Пушкин 2024.docx')
+    href: require('../../assets/docs/festivals/Положение - Пушкин 2025 (1).docx')
   },
   {
     id: 2,
@@ -129,6 +129,6 @@ export const festivalsConfig = [
     place: 'ДК Звёздный',
     date: 'Декабрь',
     age: '5 +',
-    href: require('../../assets/docs/festivals/Положение Елочная Игрушка 2023.docx')
+    href: require('../../assets/docs/festivals/Положение ёлочная игрушка.pdf')
   }
 ]

@@ -16,10 +16,7 @@ function Documents() {
                <div className="documents-header _content">
                   {/*<h1 className="documents-header__title _title">Правовая Информация</h1>*/}
                   <ul className="documents-header__info-list">
-                     <li className="documents-header__info-list_text">Документы и общая информация о Доме Культуры «Звёздный» на <a className="documents-header__info-list_link" href="/"> Официальном сайте для размещения информации о государственных учреждениях</a></li>
-                     <li className="documents-header__info-list_text">Полное название: Муниципальное Бюджетное Учреждение Культуры Дом Культуры «Звёздный»</li>
-                     <li className="documents-header__info-list_text">Сокращённое название МБУК ДК «Звёздный»</li>
-                     <li className="documents-header__info-list_text">Год создания: 2000</li>
+                     <li className="documents-header__info-list_text">Полное название:  Структурное подразделение Государственного Бюджетного Учреждения «Центр Досуга и Спорта» Структурное Подразделение «Дом культуры «Звездный» (СГБУ «ЦДС ТиНАО» СП «Дом культуры «Звездный»)</li>
                   </ul>
                </div>
                <Accordion
